@@ -5,11 +5,17 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: HomeView,
+    meta: {
+      title: 'Home'
+    }
   },
   {
     path: '/about',
     name: 'about',
+    meta: {
+      title: 'About ' + process.env.TITLE
+    },
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
@@ -20,6 +26,12 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
+})
+
+router.beforeEach((to, from) => {
+  document.title = to.meta?.title ?? to.meta.title | 'Vue 3 App' 
+  console.log('to', to.meta.title)
+  console.log(process.env.TITLE)
 })
 
 export default router
