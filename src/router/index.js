@@ -14,7 +14,7 @@ const routes = [
     path: '/about',
     name: 'about',
     meta: {
-      title: 'About ' + process.env.TITLE
+      title: 'About ' + process.env.VUE_APP_TITLE
     },
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
@@ -28,10 +28,10 @@ const router = createRouter({
   routes
 })
 
+// Set the title of the page based on the route
 router.beforeEach((to, from) => {
   document.title = to.meta?.title ?? to.meta.title | 'Vue 3 App' 
   console.log('to', to.meta.title)
-  console.log(process.env.TITLE)
 })
 
 export default router
