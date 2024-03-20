@@ -31,7 +31,7 @@ const router = createRouter({
 // Set the title of the page based on the route
 router.beforeEach((to, from) => {
   document.title = to.meta?.title ?? to.meta.title | 'Vue 3 App' 
-  console.log('to', to.meta.title)
+  console.log('to', process.env.BASE_URL)
 })
 
 export default router

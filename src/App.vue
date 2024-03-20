@@ -11,16 +11,6 @@ export default {
   components: {
     NavBar 
   },
-  data() {
-    return {
-      isOpen: false,
-    };
-  },
-  methods: {
-    toggle() {
-      this.isOpen = !this.isOpen;
-    },
-  },
 };
 </script>
 
