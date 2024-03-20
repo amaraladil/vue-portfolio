@@ -4,27 +4,25 @@
       <!-- Parent container for the sticky content -->
       <div class="sticky-container">
         <!-- Content that will stick -->
-        <div class="sticky-content">
-          <p>Ipsum #1 Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru
-          </p>
+        <div class="sticky-content flex items-center">
+            <img alt="Vue logo" src="../assets/logo.png" class="w-full">
+          <!-- <p>Ipsum #1 Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru
+          </p> -->
         </div>
       </div>
     </div>
     <div class="right-side px-6 items-center mb-5">
-      <div class="right-side-layers">
-        <p>This content will continue to scroll.</p>
+      <div class="right-side-layers self-center">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel numquam veritatis, quis dignissimos molestias mollitia debitis sapiente quae ullam ea quaerat laboriosam iste. Corrupti quasi est ratione cupiditate at repellendus!</p>
       </div>
       <div class="right-side-layers">
-        <p>This content will continue to scroll.</p>
-        <img alt="Vue logo" src="../assets/logo.png">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam provident neque officiis amet, distinctio ad obcaecati. Cupiditate, repellendus architecto delectus impedit ea fuga eos sed molestias magnam laborum? Impedit, laboriosam?</p>
       </div>
       <div class="right-side-layers">
-        <p>This content will continue to scroll.</p>
-        <img alt="Vue logo" src="../assets/logo.png">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aspernatur aperiam quos exercitationem nam soluta fugit quod eaque nobis, rem, in facilis omnis expedita minima a incidunt cupiditate inventore odio?</p>
       </div>
       <div class="right-side-layers">
-        <p>This content will continue to scroll.</p>
-        <img alt="Vue logo" src="../assets/logo.png">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita cupiditate architecto perspiciatis ab officiis cum dolore velit quas, mollitia totam delectus iusto non minima libero! Sapiente nemo voluptatibus earum!</p>
       </div>
     </div>
   </div>
@@ -126,6 +124,7 @@
 
 .right-side {
   width: 50%;
+  /* vertical-align: middle; */
   height: 100vh; /* Make this taller to see the effect */
 }
 
