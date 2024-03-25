@@ -101,6 +101,20 @@
 
     <!-- Add more rows as needed -->
   </div>
+
+  <!-- Row 1: Image on left, text on right -->
+  <div class="md:grid md:grid-cols-2 items-center">
+      <div class="order-last md:order-first">
+        <img alt="Vue logo" src="../assets/logo.png">
+      </div>
+      <div class="text-left">
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          <router-link to="/projects/1" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Button
+          </router-link>
+        </button>
+      </div>
+    </div>
     
 </template>
 
