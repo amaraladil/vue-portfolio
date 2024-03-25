@@ -18,4 +18,8 @@ export default {
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+body {
+  @apply bg-gray-500;
+}
 </style>
