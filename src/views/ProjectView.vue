@@ -7,6 +7,7 @@
         This is Project {{ $route.params.projectId }}
       </h1>
       <!-- Add your layout here -->
+      <img alt="Vue logo" src="../assets/logo.png" />
     </div>
   </Transition>
 </template>
