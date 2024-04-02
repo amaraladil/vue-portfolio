@@ -139,7 +139,7 @@
 
 .right-side-layers{
   height: 60vh;
-  @apply flex flex-wrap items-center
+  @apply flex flex-wrap items-center;
 }
 
 .sticky-container {

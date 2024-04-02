@@ -1,7 +1,6 @@
 <template>
   <Transition appear
-    name="slide-right"
-    :duration="550">
+    name="slide-right">
     <div class="project">
       <h1>
         This is Project {{ $route.params.projectId }}
