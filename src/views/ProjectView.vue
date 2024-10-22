@@ -7,6 +7,7 @@
         This is Project {{ $route.params.projectId }}
       </h1>
       <!-- Add your layout here -->
+      <img alt="Vue logo" src="../assets/logo.png" />
     </div>
   </Transition>
 </template>
@@ -42,5 +43,12 @@ export default {
 .slide-right-leave-to {
   opacity: 0;
   transform: translateX(30px);
+}
+
+.project {
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 </style>

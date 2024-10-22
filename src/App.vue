@@ -20,6 +20,6 @@ export default {
 @import 'tailwindcss/utilities';
 
 body {
-  @apply bg-gray-500;
+  @apply bg-gray-200;
 }
 </style>
