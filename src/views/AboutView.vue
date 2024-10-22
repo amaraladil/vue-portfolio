@@ -1,5 +1,5 @@
 <template>
-  <div class="container px-10 bg-gray-500">
+  <div class="container-slider ">
     <div class="left-side mt-10 mb-5">
       <!-- Parent container for the sticky content -->
       <div class="sticky-container">
@@ -25,6 +25,7 @@
     </div>
   </div>
 
+  <!-- gradient blue/purple -->
   <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 700 700" width="700" height="700">
     <defs>
       <linearGradient gradientTransform="rotate(150, 0.5, 0.5)" x1="50%" y1="0%" x2="50%" y2="100%" id="ffflux-gradient">
@@ -108,11 +109,20 @@
         <img alt="Vue logo" src="../assets/logo.png">
       </div>
       <div class="text-left">
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          <router-link to="/projects/1" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <p>
+          ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <!-- <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded"> -->
+          <router-link :to="{ name: 'project', params: { projectId: '1' } }" class="bg-blue-500 hover:bg-blue-700 text-white hover:text-green-300 font-bold py-2 px-8 rounded">
             Button
           </router-link>
-        </button>
+        <!-- </button> -->
+        <p>
+          blah blah blah
+        </p>
+        <p>
+          ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
       </div>
     </div>
     
@@ -122,8 +132,9 @@
 </script>
 
 <style scoped>
-.container {
+.container-slider {
   display: flex;
+  @apply bg-gray-500 px-10
 }
 
 .left-side {
