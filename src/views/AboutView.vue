@@ -45,7 +45,7 @@
       </div>
     </div>
   </div>
-  <ClayMan />
+  
   <!-- gradient blue/purple -->
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -254,7 +254,7 @@
 import ClayMan from "@/components/ClayMan.vue";
 
 export default {
-  name: "AboutView",
+  name: "about",
   components: {
     ClayMan,
   },
