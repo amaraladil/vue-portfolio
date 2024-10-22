@@ -1,16 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 
 const routes = [
   { path: '/',
-    name: 'home',
-    component: HomeView,
-    meta: {
-      title: 'Home'
-    }
-  },
-  { path: '/about',
     name: 'about',
     meta: {
       title: 'All about ' + process.env.VUE_APP_TITLE
@@ -34,7 +26,7 @@ const routes = [
     },
     component: () => import('../views/NotFoundView.vue') 
   }
-] 
+]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
