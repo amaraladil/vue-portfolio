@@ -267,6 +267,7 @@ export default {
 <style scoped>
 .container-slider {
   display: flex;
+  position: relative;
   @apply bg-gray-500 px-10;
 }
 
@@ -327,30 +328,29 @@ export default {
 }
 
 .marquee-container {
-  --math: -170* 8;
   display: flex;
   white-space: nowrap;
-  transform: translateX(-20vw)rotate(-4deg); 
+  transform: translateX(-5vw) translateY(10px) rotate(-4deg); 
   z-index: 1;
-  width: 125vw;
-  @apply flex bg-gray-500;
+  width: 140vw;
+  @apply bg-gray-500;
   padding: 0 10em 10em 10em;
   position: relative;
   
   & img {
     height: 10em;
     margin-right: 20px;
+    width: 170px;
     animation: marquee 15s linear infinite;
   }
 }
-
 
 @keyframes marquee {
   0% {
     transform: translateX(0vw);
   }
   100% {
-    transform: translateX(-100vw);
+    transform: translateX(-1520px);
   }
 }
 </style>
