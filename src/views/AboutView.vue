@@ -145,41 +145,17 @@
     </svg>
   </div>
 
-  <div class="pb-10">
-    <div class="px-10 flex flex-col md:flex-row items-center bg-gray-400">
-      <div class="md:w-1/2 p-4 text-left">
-        <!-- Content for left div -->
-        #1.1 Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </div>
-      <div class="md:w-1/2 order-first md:order-last mx-9">
-        <!-- Content for right div -->
-        <img alt="Vue logo" src="../assets/logo.png" />
-      </div>
-    </div>
+  <article id="projects" class="pb-10">
+    
+    <RightTile />
+    <LeftTile />
+    <RightTile />
+    <LeftTile />
+    <RightTile />
+    <RightTile />
+    <RightTile />
 
-    <div class="px-10 flex flex-col md:flex-row items-center mb-10 bg-gray-400">
-      <div class="md:w-1/3">
-        <!-- Content for left div -->
-        <img alt="Vue logo" src="../assets/logo.png" />
-      </div>
-      <div class="md:w-2/3 text-left">
-        <!-- Content for right div -->
-        #1.2 Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </div>
-    </div>
-  </div>
+  </article>
 
   <div>
     <!-- Row 1: Image on left, text on right -->
@@ -252,11 +228,15 @@
 
 <script>
 import ClayMan from "@/components/ClayMan.vue";
+import LeftTile from "@/components/LeftTile.vue";
+import RightTile from "@/components/RightTile.vue";
 
 export default {
   name: "about",
   components: {
     ClayMan,
+    LeftTile,
+    RightTile,
   },
 };
 </script>

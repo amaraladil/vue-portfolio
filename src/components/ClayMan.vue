@@ -68,7 +68,7 @@ article {
 
   font-size: .7em;
   position: absolute;
-  bottom: 100px;
+  bottom: 4vh;
   left: 50%;
   transform: translate(-50%, 0%);
   width: 80em;
