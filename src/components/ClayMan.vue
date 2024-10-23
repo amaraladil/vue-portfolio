@@ -36,10 +36,7 @@ body {
 }
 
 .clay{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  height: 90vh;
 }
 
 article {
@@ -52,6 +49,7 @@ article {
   --hair: #ee9247;
   --pants: #6ca1ba;
 
+  white-space: nowrap;
   /* color alternative */
 /*     --shirt: #c83;
   --skin: #753;
@@ -68,10 +66,11 @@ article {
 
   font-size: .7em;
   position: absolute;
-  bottom: 4vh;
+  bottom: 20vh;
   left: 50%;
   transform: translate(-50%, 0%);
-  width: 80em;
+  width: 80%;
+  min-width: 468px;
   aspect-ratio: 1;
   overflow: hidden;
   box-shadow: 0 0 0 0.25em #0003;

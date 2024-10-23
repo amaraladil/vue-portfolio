@@ -1,6 +1,29 @@
 <template>
   <ClayMan />
-  <div class="container-slider">
+
+  <div class="marquee-overview" >
+    <div class="marquee-container">
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+
+    </div>
+  </div>
+
+  <div class="container-slider border-b-8 border-black border-double">
     <div class="left-side mt-10 mb-5">
       <!-- Parent container for the sticky content -->
       <div class="sticky-container">
@@ -47,7 +70,7 @@
   </div>
   
   <!-- gradient blue/purple -->
-  <svg
+  <!-- <svg
     xmlns="http://www.w3.org/2000/svg"
     version="1.1"
     xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -118,7 +141,7 @@
       fill="url(#ffflux-gradient)"
       filter="url(#ffflux-filter)"
     ></rect>
-  </svg>
+  </svg> -->
 
   <div class="custom-shape-divider-top-1710910973 bg-gray-400">
     <svg
@@ -139,15 +162,15 @@
         y1="0%"
         y2="0%"
       >
-        <stop offset="0%" stop-color="yellow" />
-        <stop offset="100%" stop-color="red" />
+        <stop offset="0%" stop-color="rgba(107, 114, 128)" />
+        <stop offset="100%" stop-color="rgba(156, 163, 175, var(--tw-bg-opacity))" />
       </linearGradient>
     </svg>
   </div>
 
-  <article id="projects" class="pb-10">
+  <article id="projects" class="pb-10 ">
     
-    <RightTile />
+    <RightTile project-title="hi" />
     <LeftTile />
     <RightTile />
     <LeftTile />
@@ -294,5 +317,40 @@ export default {
   --tw-bg-opacity: 1;
   fill: url(#gradient-0);
   /* fill: rgba(107, 114, 128, var(--tw-bg-opacity)); */
+}
+
+.marquee-overview {
+  overflow: hidden; 
+  height: 15em;
+  bottom: 250px;
+  position: relative;
+}
+
+.marquee-container {
+  --math: -170* 8;
+  display: flex;
+  white-space: nowrap;
+  transform: translateX(-20vw)rotate(-4deg); 
+  z-index: 1;
+  width: 125vw;
+  @apply flex bg-gray-500;
+  padding: 0 10em 10em 10em;
+  position: relative;
+  
+  & img {
+    height: 10em;
+    margin-right: 20px;
+    animation: marquee 15s linear infinite;
+  }
+}
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0vw);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
 }
 </style>
