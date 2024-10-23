@@ -9,7 +9,7 @@ import NavBar from './components/NavBar.vue';
 export default {
   name: 'App',
   components: {
-    NavBar 
+    NavBar
   },
   watch: {
     $route() {
@@ -29,7 +29,7 @@ export default {
 @import 'tailwindcss/utilities';
 
 body {
-  @apply bg-gray-500;
+  @apply bg-gray-200;
 }
 
 .router-link-exact-active {

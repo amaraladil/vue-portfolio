@@ -43,4 +43,11 @@ export default {
   opacity: 0;
   transform: translateX(30px);
 }
+
+.project {
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 </style>
