@@ -1,6 +1,29 @@
 <template>
   <ClayMan />
-  <div class="container-slider">
+
+  <div class="marquee-overview" >
+    <div class="marquee-container">
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <img alt="Vue logo" src="../assets/logo.png" />
+
+    </div>
+  </div>
+
+  <div class="container-slider border-b-8 border-black border-double">
     <div class="left-side mt-10 mb-5">
       <!-- Parent container for the sticky content -->
       <div class="sticky-container">
@@ -47,7 +70,7 @@
   </div>
   
   <!-- gradient blue/purple -->
-  <svg
+  <!-- <svg
     xmlns="http://www.w3.org/2000/svg"
     version="1.1"
     xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -118,7 +141,7 @@
       fill="url(#ffflux-gradient)"
       filter="url(#ffflux-filter)"
     ></rect>
-  </svg>
+  </svg> -->
 
   <div class="custom-shape-divider-top-1710910973 bg-gray-400">
     <svg
@@ -139,47 +162,23 @@
         y1="0%"
         y2="0%"
       >
-        <stop offset="0%" stop-color="yellow" />
-        <stop offset="100%" stop-color="red" />
+        <stop offset="0%" stop-color="rgba(107, 114, 128)" />
+        <stop offset="100%" stop-color="rgba(156, 163, 175, var(--tw-bg-opacity))" />
       </linearGradient>
     </svg>
   </div>
 
-  <div class="pb-10">
-    <div class="px-10 flex flex-col md:flex-row items-center bg-gray-400">
-      <div class="md:w-1/2 p-4 text-left">
-        <!-- Content for left div -->
-        #1.1 Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </div>
-      <div class="md:w-1/2 order-first md:order-last mx-9">
-        <!-- Content for right div -->
-        <img alt="Vue logo" src="../assets/logo.png" />
-      </div>
-    </div>
+  <article id="projects" class="pb-10 ">
+    
+    <RightTile project-title="hi" />
+    <LeftTile />
+    <RightTile />
+    <LeftTile />
+    <RightTile />
+    <RightTile />
+    <RightTile />
 
-    <div class="px-10 flex flex-col md:flex-row items-center mb-10 bg-gray-400">
-      <div class="md:w-1/3">
-        <!-- Content for left div -->
-        <img alt="Vue logo" src="../assets/logo.png" />
-      </div>
-      <div class="md:w-2/3 text-left">
-        <!-- Content for right div -->
-        #1.2 Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </div>
-    </div>
-  </div>
+  </article>
 
   <div>
     <!-- Row 1: Image on left, text on right -->
@@ -252,11 +251,15 @@
 
 <script>
 import ClayMan from "@/components/ClayMan.vue";
+import LeftTile from "@/components/LeftTile.vue";
+import RightTile from "@/components/RightTile.vue";
 
 export default {
   name: "about",
   components: {
     ClayMan,
+    LeftTile,
+    RightTile,
   },
 };
 </script>
@@ -264,6 +267,7 @@ export default {
 <style scoped>
 .container-slider {
   display: flex;
+  position: relative;
   @apply bg-gray-500 px-10;
 }
 
@@ -314,5 +318,39 @@ export default {
   --tw-bg-opacity: 1;
   fill: url(#gradient-0);
   /* fill: rgba(107, 114, 128, var(--tw-bg-opacity)); */
+}
+
+.marquee-overview {
+  overflow: hidden; 
+  height: 15em;
+  bottom: 250px;
+  position: relative;
+}
+
+.marquee-container {
+  display: flex;
+  white-space: nowrap;
+  transform: translateX(-5vw) translateY(10px) rotate(-4deg); 
+  z-index: 1;
+  width: 140vw;
+  @apply bg-gray-500;
+  padding: 0 10em 10em 10em;
+  position: relative;
+  
+  & img {
+    height: 10em;
+    margin-right: 20px;
+    width: 170px;
+    animation: marquee 15s linear infinite;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0vw);
+  }
+  100% {
+    transform: translateX(-1520px);
+  }
 }
 </style>
