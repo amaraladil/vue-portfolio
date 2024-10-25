@@ -36,7 +36,7 @@ body {
 }
 
 .clay{
-  height: 90vh;
+  height: 65vh;
 }
 
 article {
@@ -71,6 +71,7 @@ article {
   transform: translate(-50%, 0%);
   width: 80%;
   min-width: 468px;
+  max-width: 900px;
   aspect-ratio: 1;
   overflow: hidden;
   /* box-shadow: 0 0 0 0.25em #0003; */
