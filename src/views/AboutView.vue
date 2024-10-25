@@ -1,41 +1,7 @@
 <template>
   <ClayMan />
-
-  <div class="marquee-overview" >
-    <div class="marquee-container">
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-      <img alt="Vue logo" src="../assets/logo.png" />
-    </div>
-  </div>
+  
+  <MarqueeInfinite />
 
   <div class="container-slider border-b-8 border-black border-double">
     <div class="left-side mt-10 mb-5">
@@ -244,80 +210,13 @@
             mollit anim id est laborum."/>
 
   </article>
-
-  <div>
-    <!-- Row 1: Image on left, text on right -->
-    <div class="md:grid md:grid-cols-2 items-center">
-      <div class="order-last md:order-first">
-        <img alt="Vue logo" src="../assets/logo.png" />
-      </div>
-      <div class="text-left">
-        <p>
-          #2 Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea commodo consequat. Duis aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia
-          deserunt mollit anim id est laborum.
-        </p>
-      </div>
-    </div>
-
-    <!-- Row 2: Text on left, image on right -->
-    <div class="md:grid md:grid-cols-2 items-center">
-      <div class="text-left md:pr-8">
-        <p>#3 Your text here...</p>
-      </div>
-      <div class="md:order-last sm:order-first">
-        <img alt="Vue logo" src="../assets/logo.png" />
-      </div>
-    </div>
-
-    <!-- Add more rows as needed -->
-  </div>
-
-  <!-- Row 1: Image on left, text on right -->
-  <div class="md:grid md:grid-cols-2 items-center">
-    <div class="order-last md:order-first">
-      <img alt="Vue logo" src="../assets/logo.png" />
-    </div>
-    <div class="text-left">
-      <p>
-        ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-        id est laborum.
-      </p>
-      <!-- <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded"> -->
-      <router-link
-        :to="{ name: 'project', params: { projectId: '1' } }"
-        class="bg-blue-500 hover:bg-blue-700 text-white hover:text-green-300 font-bold py-2 px-8 rounded"
-      >
-        Button
-      </router-link>
-      <!-- </button> -->
-      <p>blah blah blah</p>
-      <p>
-        ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-        id est laborum.
-      </p>
-    </div>
-  </div>
 </template>
 
 <script>
 import ClayMan from "@/components/ClayMan.vue";
 import LeftTile from "@/components/LeftTile.vue";
 import RightTile from "@/components/RightTile.vue";
+import MarqueeInfinite from "@/components/Marquee.vue";
 
 export default {
   name: "about",
@@ -325,6 +224,7 @@ export default {
     ClayMan,
     LeftTile,
     RightTile,
+    MarqueeInfinite,
   },
 };
 </script>
@@ -386,38 +286,4 @@ export default {
   /* fill: rgba(107, 114, 128, var(--tw-bg-opacity)); */
 }
 
-.marquee-overview {
-  overflow: hidden; 
-  /* height: 30em; */
-  /* bottom: 300px; */
-  position: relative;
-}
-
-.marquee-container {
-  display: flex;
-  white-space: nowrap;
-  bottom: -50px;
-  transform: translateX(-5vw) translateY(10px) rotate(-2deg); ;
-  z-index: 1;
-  width: 140vw;
-  @apply bg-gray-500;
-  padding: 0 10em 10em 10em;
-  position: relative;
-  
-  & img {
-    height: 10em;
-    margin-right: 20px;
-    width: 170px;
-    animation: marquee 15s linear infinite;
-  }
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0vw);
-  }
-  100% {
-    transform: translateX(-1520px);
-  }
-}
 </style>

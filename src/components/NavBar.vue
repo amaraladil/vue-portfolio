@@ -1,26 +1,25 @@
 <template>
-    <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6 fixed z-10">
-        <div class="flex items-center flex-shrink-0 text-white mr-6">
-            <span class="font-semibold text-xl tracking-tight text-electric-violet-600">Your App</span>
-        </div>
-        <div class="block lg:hidden ">
-            <button @click="toggle" class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-                <!-- Hamburger Icon -->
-                <svg v-if="!isOpen" class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v15z"/></svg>
-                <!-- X Icon -->
-                <svg v-else class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Close</title><path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/></svg>
-            </button>
-        </div>
-        <div :class="{ 'hidden': !isOpen, 'block': isOpen }" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-        <div class="text-sm lg:flex-grow">
-            <router-link to="/" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-            Home
-            </router-link>
-            <router-link to="/#project" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-            About
-            </router-link>
-        </div>
-    </div>
+    <nav>
+        <ul class="">
+            <li>
+                <router-link to="/" class="">
+                    <font-awesome-icon :icon="['fas', 'home']" />
+                    <div class="link-text">Home</div>
+                </router-link>
+            </li>
+            <li>
+                <router-link to="#project" class="">
+                    <font-awesome-icon :icon="['fas', 'folder-open']" />
+                    <div class="link-text">Projects</div>
+                </router-link>
+            </li>
+            <li>
+                <a v-bind:href="linkedInUrl" class="">
+                    <font-awesome-icon :icon="['fab', 'linkedin']"/>
+                    <div class="link-text">LinkedIn</div>
+                </a>
+            </li>
+        </ul>
   </nav>
 </template>
 
@@ -30,6 +29,7 @@ export default {
     data() {
         return {
             isOpen: false,
+            linkedInUrl: 'https://www.linkedin.com/in/amaraladil/',
         };
     },
     methods: {
@@ -40,5 +40,45 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+nav {
+    @apply fixed z-10 w-20 h-screen bg-indigo-500;
+    transition: width 200ms ease;
+}
+
+ul {
+    @apply list-none flex flex-col p-0 m-0 items-center h-full;
+}
+
+li {
+    @apply w-full;
+}
+
+li:last-child {
+    @apply mt-auto;
+}
+
+nav a {
+    text-decoration: none;
+    @apply flex items-center font-bold text-2xl h-20 text-gray-200 hover:text-purple-300;
+}
+
+svg {
+    min-width: 2 rem;
+    margin: 0 1.5rem;
+}
+
+.link-text {
+    @apply hidden ml-1;
+}
+
+nav:hover {
+    @apply w-64;
+}
+
+nav:hover .link-text {
+    @apply block;
+}
+
+
 </style>

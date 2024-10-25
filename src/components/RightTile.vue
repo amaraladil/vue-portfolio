@@ -6,7 +6,7 @@
             {{ content }}
         </p>
         
-        <div class="flex justify-end">
+        <div class="flex md:justify-end">
           <router-link :to="{ name: 'project', params: { projectId: '1' } }"
                           class="border border-blue-500 bg-gray-700 hover:bg-blue-700 text-white hover:text-green-300 font-bold py-2 px-4 rounded mx-1">
               Demo
