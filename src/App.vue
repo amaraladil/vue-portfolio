@@ -1,7 +1,10 @@
 <template>
   <NavBar/>
-  <router-view/>
+  <main>
+    <router-view/>
+  </main>
 </template>
+
 
 <script>
 import NavBar from './components/NavBar.vue';
@@ -20,7 +23,11 @@ export default {
 @import 'tailwindcss/utilities';
 
 body {
-  @apply bg-gray-200;
+  @apply bg-purple-200;
+}
+
+main {
+  @apply ml-20 font-sans;
 }
 
 :root {
@@ -36,15 +43,21 @@ body {
   --denary: #f43f5e;
 }
 
-body::-webkit-scrollbar {
-  width: 10rem;
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) var(--tertiary);
 }
 
-body::-webkit-scrollbar-track {
-  background: #1e1e24;
+::-webkit-scrollbar {
+  width: 0.5rem;
 }
 
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-track {
+  
+  background: var(--tertiary);
+}
+
+::-webkit-scrollbar-thumb {
   background-color: var(--primary);
 }
 </style>
