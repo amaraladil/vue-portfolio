@@ -39,7 +39,6 @@ router.beforeEach((to, from) => {
   document.title = to.meta?.title ?? to.meta.title | 'Portfolio' 
   // if (to.params?.projectId) document.title += ' - ' + to.params.projectId
   document.title += to.params?.projectId ? ' - ' + to.params.projectId : ''
-  console.log('to', process.env.BASE_URL)
 })
 
 export default router
