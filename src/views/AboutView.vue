@@ -148,7 +148,7 @@
     </svg>
   </div>
 
-  <article id="projects" class="pb-10 ">
+  <section id="project" class="pb-10 ">
     
     <RightTile title="#1 hello world" content="Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -209,7 +209,7 @@
             occaecat cupidatat non proident, sunt in culpa qui officia deserunt
             mollit anim id est laborum."/>
 
-  </article>
+  </section>
 </template>
 
 <script>
@@ -226,10 +226,20 @@ export default {
     RightTile,
     MarqueeInfinite,
   },
+  props: {
+    Projects: Array,
+  },
+  setup() {
+    return { Projects: [] };
+  }
 };
 </script>
 
 <style scoped>
+html {
+  scroll-behavior: smooth;
+}
+
 .container-slider {
   border-top: 1px solid #000;
   display: flex;

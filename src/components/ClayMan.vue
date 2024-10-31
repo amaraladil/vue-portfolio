@@ -37,6 +37,7 @@ body {
 
 .clay{
   height: 65vh;
+  overflow-x: hidden;
 }
 
 article {
