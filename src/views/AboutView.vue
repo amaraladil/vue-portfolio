@@ -3,9 +3,7 @@
   
   <MarqueeInfinite />
 
-
-
-  <div class="container-slider border-b-8 border-black border-double">
+  <div id="experience" class="container-slider border-b-8 border-black border-double">
     <div class="left-side mt-10 mb-5">
       <!-- Parent container for the sticky content -->
       <div class="sticky-container">
@@ -112,6 +110,7 @@ html {
 
 .left-side {
   /* width: 50%; */
+  overflow-x: visible;
   @apply w-1/3 sm:w-1/2;
 }
 
@@ -132,7 +131,7 @@ html {
 
 .sticky-content {
   position: sticky;
-  top: 10vh;
+  top: 5vh;
   margin-top: 10vh; /* Adjust this to control the space at the top */
   @apply bg-gray-400;
 }
