@@ -3,6 +3,8 @@
   
   <MarqueeInfinite />
 
+
+
   <div class="container-slider border-b-8 border-black border-double">
     <div class="left-side mt-10 mb-5">
       <!-- Parent container for the sticky content -->
@@ -48,80 +50,6 @@
       </div>
     </div>
   </div>
-  
-  <!-- gradient blue/purple -->
-  <!-- <svg
-    xmlns="http://www.w3.org/2000/svg"
-    version="1.1"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:svgjs="http://svgjs.dev/svgjs"
-    viewBox="0 0 700 700"
-    width="700"
-    height="700"
-  >
-    <defs>
-      <linearGradient
-        gradientTransform="rotate(150, 0.5, 0.5)"
-        x1="50%"
-        y1="0%"
-        x2="50%"
-        y2="100%"
-        id="ffflux-gradient"
-      >
-        <stop stop-color="hsl(315, 100%, 72%)" stop-opacity="1" offset="0%" />
-        <stop stop-color="hsl(227, 100%, 50%)" stop-opacity="1" offset="100%" />
-      </linearGradient>
-      <filter
-        id="ffflux-filter"
-        x="-20%"
-        y="-20%"
-        width="140%"
-        height="140%"
-        filterUnits="objectBoundingBox"
-        primitiveUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
-      >
-        <feTurbulence
-          type="fractalNoise"
-          baseFrequency="0.005 0.003"
-          numOctaves="2"
-          seed="2"
-          stitchTiles="stitch"
-          x="0%"
-          y="0%"
-          width="100%"
-          height="100%"
-          result="turbulence"
-        ></feTurbulence>
-        <feGaussianBlur
-          stdDeviation="20 0"
-          x="0%"
-          y="0%"
-          width="100%"
-          height="100%"
-          in="turbulence"
-          edgeMode="duplicate"
-          result="blur"
-        ></feGaussianBlur>
-        <feBlend
-          mode="hard-light"
-          x="0%"
-          y="0%"
-          width="100%"
-          height="100%"
-          in="SourceGraphic"
-          in2="blur"
-          result="blend"
-        ></feBlend>
-      </filter>
-    </defs>
-    <rect
-      width="700"
-      height="700"
-      fill="url(#ffflux-gradient)"
-      filter="url(#ffflux-filter)"
-    ></rect>
-  </svg> -->
 
   <div class="custom-shape-divider-top-1710910973 bg-gray-400">
     <svg
@@ -148,75 +76,15 @@
     </svg>
   </div>
 
-  <section id="project" class="pb-10 ">
-    
-    <RightTile title="#1 hello world" content="Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum." 
-            demoLink="hi"/>
-    <LeftTile title="#2 whats up world" content="Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum." 
-            demoLink="hi"/>
-    <RightTile title="#3 Monke" content="Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum." />
-    <LeftTile title="#4 Dumdum" content="Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum."/>
-    <RightTile title="#5 My G" content="Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum."/>
-    <RightTile title="#6 GalPal" content="Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum."/>
-    <RightTile title="#7 ToDo App" content="Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum."/>
-    <LeftTile title="#8 Hello World" content="Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum."/>
-
-  </section>
+  <Projects />
 </template>
 
 <script>
 import ClayMan from "@/components/ClayMan.vue";
-import LeftTile from "@/components/LeftTile.vue";
-import RightTile from "@/components/RightTile.vue";
+import LeftTile from "@/components/ProjectsLeftPicture.vue";
+import RightTile from "@/components/ProjectsRightPicture.vue";
 import MarqueeInfinite from "@/components/Marquee.vue";
+import Projects from "@/components/Projects.vue";
 
 export default {
   name: "about",
@@ -225,13 +93,8 @@ export default {
     LeftTile,
     RightTile,
     MarqueeInfinite,
+    Projects,
   },
-  props: {
-    Projects: Array,
-  },
-  setup() {
-    return { Projects: [] };
-  }
 };
 </script>
 
