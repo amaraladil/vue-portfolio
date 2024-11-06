@@ -2,11 +2,10 @@
     <section id="project" class="pb-10 ">
 
         <div v-for="project in Projects" :key="project.id">
-            
-            <component :is="project.component" :title="project.id" :project="project" />
+            <component :is="project.component" :title="project.name" :content="project.description" :demoLink="project.demoLink" :project="project" />
         </div>
     
-        <ProjectsRightPicture title="#1 hello world" content="Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        <!--<ProjectsRightPicture title="#1 hello world" content="Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                 veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                 commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
@@ -22,7 +21,7 @@
                 occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                 mollit anim id est laborum." 
                 demoLink="hi"/>
-        <!-- <RightTile title="#3 Monke" content="Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+         <RightTile title="#3 Monke" content="Ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                 veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                 commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
@@ -84,19 +83,22 @@ export default {
         };
     },
     async created() {
-        const response = await fetch('/.netlify/functions/getProjects');
+        const response = await fetch('/.netlify/functions/get-all-projects');
         const data = await response.json();
-        console.log(data);
-        
+        // console.log(data);
+
+        let count = 0;
         this.Projects = data.map((project) => {
+            count++;
             return {
                 id: project.id,
                 name: project.name,
                 description: project.description,
-                demoLink: project.homepage,
-                component: project.id % 2 == 0 ? 'ProjectsRightPicture' : 'ProjectsLeftPicture',
+                demoLink: project.web,
+                component: count % 2 == 0 ? 'ProjectsRightPicture' : 'ProjectsLeftPicture',
             };
         });
+        // console.log(this.Projects);
     },
 };
 </script>

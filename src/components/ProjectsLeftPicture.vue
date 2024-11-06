@@ -11,10 +11,10 @@
             {{ content }}
          </p>
 
-         <router-link v-if="demoLink" :to="{ name: 'project', params: { projectId: '1' } }"
+         <a v-if="demoLink" :href="demoLink" target="_blank" rel="noopener noreferrer"
                         class="border border-blue-500 bg-gray-700 hover:bg-blue-700 text-white hover:text-green-300 font-bold py-2 px-4 rounded mx-1">
-            Demo
-        </router-link>
+              Demo
+          </a>
         <router-link :to="{ name: 'project', params: { projectId: '1' } }"
                         class="text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg px-4 py-2 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-bold">
           Source Code
@@ -28,7 +28,7 @@
 
 <script>
 export default {
-  name: "LeftTile",
+  name: "ProjectsLeftPicture",
   props: {
     title: String,
     content: String,
