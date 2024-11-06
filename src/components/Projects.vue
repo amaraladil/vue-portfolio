@@ -105,7 +105,7 @@ export default {
                 component: count % 2 == 0 ? 'ProjectsRightPicture' : 'ProjectsLeftPicture',
             };
         });
-        saveWithExpiry('projects', this.Projects, 3600000); 
+        saveWithExpiry('projects', this.Projects); 
         console.log(this.Projects);
     },
 };
