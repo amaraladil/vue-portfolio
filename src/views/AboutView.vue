@@ -85,7 +85,7 @@ import MarqueeInfinite from "@/components/Marquee.vue";
 import Projects from "@/components/Projects.vue";
 
 export default {
-  name: "about",
+  name: "home",
   components: {
     ClayMan,
     LeftTile,

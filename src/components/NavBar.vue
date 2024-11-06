@@ -2,19 +2,19 @@
     <nav>
         <ul class="">
             <li>
-                <router-link :to="{ name:'about' }" class="">
+                <router-link :to="{ name:'home' }" @click.native="scrollToTop">
                     <font-awesome-icon :icon="['fas', 'home']" />
                     <div class="link-text">Home</div>
                 </router-link>
             </li>
             <li>
-                <router-link :to="{ name: 'about', hash: '#experience' }">
+                <router-link :to="{ name: 'home', hash: '#experience' }">
                     <font-awesome-icon :icon="['fas', 'briefcase']" />
                     <div class="link-text">Exp.</div>
                 </router-link>
             </li>
             <li>
-                <router-link :to="{ name: 'about', hash: '#project' }">
+                <router-link :to="{ name: 'home', hash: '#project' }">
                     <font-awesome-icon :icon="['fas', 'folder-open']" />
                     <div class="link-text">Projects</div>
                 </router-link>
@@ -41,6 +41,9 @@ export default {
     methods: {
         toggle() {
             this.isOpen = !this.isOpen;
+        },
+        scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         },
     },
 };

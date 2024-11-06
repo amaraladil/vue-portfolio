@@ -3,7 +3,7 @@
       <div class="md:w-1/2 p-4 text-left">
         <h3 class="text-2xl">{{ title }}</h3>
         <p class="pb-3">
-            {{ content }}
+            {{ project.description }}
         </p>
         
         <div class="flex md:justify-end">
@@ -38,6 +38,9 @@ export default {
     demoLink: String,
     sourceLink: String,
     image: String,
+  },
+  created() {
+    console.log(this.project);
   },
 };
 </script>
