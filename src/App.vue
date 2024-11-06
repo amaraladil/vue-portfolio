@@ -23,11 +23,15 @@ export default {
 @import 'tailwindcss/utilities';
 
 body {
-  @apply bg-purple-200;
+  @apply bg-gradient-to-br from-purple-300 to-indigo-300 overscroll-none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 main {
-  @apply ml-20 font-sans;
+  @apply md:ml-20 pb-10 md:pb-0 font-sans ;
 }
 
 :root {

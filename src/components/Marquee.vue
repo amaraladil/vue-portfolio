@@ -54,7 +54,7 @@ export default {
         display: flex;
         white-space: nowrap;
         bottom: -50px;
-        transform: translateX(-5vw) translateY(10px) rotate(-2deg); ;
+        transform: translateX(-5vw) translateY(10px) rotate(-3deg); ;
         z-index: 1;
         width: 140vw;
         @apply bg-gray-500;
