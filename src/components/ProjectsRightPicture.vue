@@ -39,12 +39,6 @@ export default {
     sourceLink: String,
     image: String,
   },
-  created() {
-    console.log(this.project);
-  },
-  mounted() {
-    demoLink: this.project.web;
-  },
 };
 </script>
 

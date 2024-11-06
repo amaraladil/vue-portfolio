@@ -75,7 +75,7 @@ article {
   max-width: 900px;
   aspect-ratio: 1;
   overflow: hidden;
-  /* box-shadow: 0 0 0 0.25em #0003; */
+  box-shadow: 0 0 0 0.25em #0003;
 }
 
 article *,
