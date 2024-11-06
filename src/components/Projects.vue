@@ -45,6 +45,7 @@ export default {
                 demoLink: project.web,
                 component: count % 2 == 0 ? 'ProjectsRightPicture' : 'ProjectsLeftPicture',
                 icons: project.code,
+                image: project.image,
             };
         });
         saveWithExpiry('projects', this.Projects); 

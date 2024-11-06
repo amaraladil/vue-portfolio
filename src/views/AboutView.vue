@@ -110,8 +110,8 @@ html {
 
 .left-side {
   /* width: 50%; */
-  overflow-x: visible;
-  @apply w-1/3 sm:w-1/2;
+  /* overflow-x: visible; */
+  @apply w-2/5 sm:w-1/2;
 }
 
 .right-side {

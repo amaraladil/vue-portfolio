@@ -1,7 +1,7 @@
 <template>
-    <div class="px-10 flex flex-col md:flex-row items-center bg-gray-500">
+    <div class="px-10 flex flex-col md:flex-row items-center bg-gradient-to-tr from-electric-violet-100 to-electric-violet-300">
       <div class="md:w-1/2 p-4 text-left">
-        <h3 class="text-2xl">{{ title }}</h3>
+        <h3 class="text-2xl">{{ project.name }}</h3>
         <p class="pb-3">
             {{ project.description }}
         </p>
@@ -22,8 +22,11 @@
       </div>
 
 
-      <div class=" md:w-1/3 p-4 order-first md:order-last mx-9">
-        <img alt="Vue logo" src="@/assets/logo.png" />
+      <div class=" md:w-1/2 p-4 order-first md:order-last ">
+        <div class="rounded-lg">
+          <img alt="Vue logo" :src="getImageUrl(project.image)" />
+          <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
+        </div>
       </div>
     </div>
 </template>
@@ -38,6 +41,11 @@ export default {
     demoLink: String,
     sourceLink: String,
     image: String,
+  },
+  methods: {
+    getImageUrl(image) {
+      return require(`@/assets/${image}`);
+    },
   },
   created() {
     console.log(this.project);

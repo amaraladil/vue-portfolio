@@ -1,14 +1,15 @@
 <template>
-    <div class="px-10 flex flex-col md:flex-row items-center  bg-gray-400 ">
-      <div class="md:w-1/3 p-4 mx-9">
-        <img alt="Vue logo" src="../assets/logo.png" />
+    <div class="px-10 flex flex-col md:flex-row items-center  bg-gradient-to-br from-electric-violet-100 to-electric-violet-300 ">
+      <div class="md:w-1/2 p-4 ">
+        <img alt="Vue logo" :src="getImageUrl(project.image)" />
+        <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
       </div>
 
 
       <div class="md:w-1/2 p-4 text-left">
-        <h3 class="text-2xl">{{ title }}</h3>    
+        <h3 class="text-2xl">{{ project.name }}</h3>    
          <p class="pb-3">
-            {{ content }}
+            {{ project.description }}
          </p>
 
          <a v-if="demoLink" :href="demoLink" target="_blank" rel="noopener noreferrer"
@@ -30,11 +31,17 @@
 export default {
   name: "ProjectsLeftPicture",
   props: {
+    project: Object,
     title: String,
     content: String,
     demoLink: String,
     sourceLink: String,
     image: String,
+  },
+  methods: {
+    getImageUrl(image) {
+      return require(`@/assets/${image}`);
+    },
   },
 };
 </script>
