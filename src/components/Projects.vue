@@ -70,6 +70,7 @@
 <script>
 import ProjectsRightPicture from './ProjectsRightPicture.vue';
 import ProjectsLeftPicture from './ProjectsLeftPicture.vue';
+import { saveWithExpiry, loadWithExpiry } from '@/utils/storage';
 
 export default {
     name: 'Projects',
@@ -83,9 +84,15 @@ export default {
         };
     },
     async created() {
+        const cachedProjects = loadWithExpiry('projects');
+
+        if (cachedProjects) {
+            this.Projects = cachedProjects;
+            return;
+        }
+
         const response = await fetch('/.netlify/functions/get-all-projects');
         const data = await response.json();
-        // console.log(data);
 
         let count = 0;
         this.Projects = data.map((project) => {
@@ -98,7 +105,8 @@ export default {
                 component: count % 2 == 0 ? 'ProjectsRightPicture' : 'ProjectsLeftPicture',
             };
         });
-        // console.log(this.Projects);
+        saveWithExpiry('projects', this.Projects, 3600000); 
+        console.log(this.Projects);
     },
 };
 </script>

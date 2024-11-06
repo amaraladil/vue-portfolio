@@ -32,7 +32,7 @@ html {
 
 main {
   // overflow-x: hidden;
-  @apply ml-0 md:ml-20 pb-10 md:pb-0 font-sans w-full;
+  @apply ml-0 md:ml-20 pb-10 md:pb-0 font-sans;
 }
 
 :root {
@@ -65,4 +65,5 @@ main {
 ::-webkit-scrollbar-thumb {
   background-color: var(--primary);
 }
+
 </style>

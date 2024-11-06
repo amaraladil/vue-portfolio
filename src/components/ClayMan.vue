@@ -1,26 +1,28 @@
 <template>
-  <div class="clay">
-    <article role="img" aria-label="Cartoon of a person in clay">
-      <div class="pants"></div>
-      <div class="hair-back"></div>
-      <div class="shirt-back"></div>
-      <div class="neck"></div>
-      <div class="head">
-        <div class="nose"></div>
-        <div class="eye"></div>
-        <div class="eye"></div>
-        <div class="mouth"></div>
-        <div class="eyebrow"></div>
-        <div class="eyebrow"></div>
-      </div>
-      <div class="arm"></div>
-      <div class="shirt-arm"></div>
-      <div class="arm"></div>
-      <div class="shirt-arm"></div>
-      <div class="shirt"></div>
-      <div class="hair-right"></div>
-      <div class="hair-left"></div>
-    </article>
+  <div class="clayman">
+    <div class="clay">
+      <article role="img" aria-label="Cartoon of a person in clay">
+        <div class="pants"></div>
+        <div class="hair-back"></div>
+        <div class="shirt-back"></div>
+        <div class="neck"></div>
+        <div class="head">
+          <div class="nose"></div>
+          <div class="eye"></div>
+          <div class="eye"></div>
+          <div class="mouth"></div>
+          <div class="eyebrow"></div>
+          <div class="eyebrow"></div>
+        </div>
+        <div class="arm"></div>
+        <div class="shirt-arm"></div>
+        <div class="arm"></div>
+        <div class="shirt-arm"></div>
+        <div class="shirt"></div>
+        <div class="hair-right"></div>
+        <div class="hair-left"></div>
+      </article>
+    </div>
   </div>
 </template>
 
@@ -38,6 +40,13 @@ body {
 .clay{
   height: 65vh;
   overflow-x: hidden;
+}
+
+.clayman {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 article {
