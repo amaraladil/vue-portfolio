@@ -105,7 +105,7 @@ html {
   border-top: 1px solid #000;
   display: flex;
   position: relative;
-  @apply bg-gray-500 px-10;
+  @apply bg-gray-500 px-10 text-lg font-serif;
 }
 
 .left-side {
