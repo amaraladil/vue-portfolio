@@ -51,17 +51,19 @@ export default {
         overflow: hidden; 
         /* height: 30em; */
         /* bottom: 300px; */
-        position: relative;
-        white-space: nowrap;
+        /* position: relative;
+        white-space: nowrap; */
     }
 
     .marquee-container {
         /* display: flex; */
+        overflow: hidden;
         white-space: nowrap;
         bottom: -50px;
         transform: translateX(-5vw) translateY(10px) rotate(-3deg); ;
         z-index: 1;
-        width: 140vw;
+        /* width: 140vw; */
+        width: 4000px;
         @apply bg-gray-500;
         padding: 0.5em 0 10em 1em;
         position: relative;
@@ -69,13 +71,14 @@ export default {
     }
 
     .marquee-content {
-        display: inline-flex;
-        animation: marquee 15s linear infinite;
+        display: inline-flex !important;
+        background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+        animation: marquee 45s linear infinite;
 
 
         img {
             height: 10em;
-            margin-right: 20px;
+            margin-right: 10px;
             width: 170px;
             
         }

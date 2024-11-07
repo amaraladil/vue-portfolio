@@ -50,7 +50,7 @@ export default {
     },
   },
   created() {
-    console.log(this.project);
+    // console.log(this.project);
   },
 };
 </script>

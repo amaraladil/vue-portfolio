@@ -51,7 +51,7 @@ export default {
 
 <style scoped>
 nav {
-    @apply fixed z-10 w-full md:w-20 md:h-screen bg-gradient-to-t from-indigo-500 to-purple-500 md:transition-all md:duration-200 md:ease-in-out bottom-0 w-full h-20;
+    @apply fixed z-10 w-full md:w-20 md:h-screen bg-gradient-to-t from-indigo-500 to-purple-500 md:transition-all md:duration-200 md:ease-in-out bottom-0 h-20;
 
     &:hover {
         @apply md:w-52;
