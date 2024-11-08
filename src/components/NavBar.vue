@@ -3,25 +3,29 @@
         <ul class="">
             <li>
                 <router-link :to="{ name:'home' }" @click.native="scrollToTop">
-                    <font-awesome-icon :icon="['fas', 'home']" />
+                    <v-icon name="hi-solid-home" />
+                    <!-- <font-awesome-icon :icon="['fas', 'home']" /> -->
                     <div class="link-text">Home</div>
                 </router-link>
             </li>
             <li>
                 <router-link :to="{ name: 'home', hash: '#experience' }">
-                    <font-awesome-icon :icon="['fas', 'briefcase']" />
+                    <v-icon name="fa-briefcase" scale="2" />
+                    <!-- <font-awesome-icon :icon="['fas', 'briefcase']" /> -->
                     <div class="link-text">Exp.</div>
                 </router-link>
             </li>
             <li>
                 <router-link :to="{ name: 'home', hash: '#project' }">
-                    <font-awesome-icon :icon="['fas', 'folder-open']" />
+                    <v-icon name="fa-folder-open" />
+                    <!-- <font-awesome-icon :icon="['fas', 'folder-open']" /> -->
                     <div class="link-text">Projects</div>
                 </router-link>
             </li>
             <li>
                 <a v-bind:href="linkedInUrl" class="">
-                    <font-awesome-icon :icon="['fab', 'linkedin']"/>
+                    <v-icon name="fa-linkedin" scale="1" />
+                    <!-- <font-awesome-icon :icon="['fab', 'linkedin']"/> -->
                     <div class="link-text">LinkedIn</div>
                 </a>
             </li>
@@ -79,6 +83,7 @@ nav a {
 svg {
     min-width: 2rem;
     margin: 0 0.5rem 0 1.5rem;
+    @apply h-6 w-8;
 }
 
 .link-text {

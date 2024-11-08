@@ -1,5 +1,5 @@
 // netlify/functions/get-all-projects.js
-const { MongoClient } = require('mongodb');
+const { MongoClient } = require("mongodb");
 
 exports.handler = async function (event, context) {
   const uri = process.env.MONGODB_URI;
@@ -7,10 +7,13 @@ exports.handler = async function (event, context) {
   try {
     await client.connect();
 
-    const database = client.db('projects');
-    const projects = database.collection('projects');
+    const database = client.db("projects");
+    const projects = database.collection("projects2");
+    const options = {
+      sort: { _id: 1 }, // Replace 'columnName' with the actual column name you want to sort by
+    };
 
-    const allProjects = await projects.find({}).toArray();
+    const allProjects = await projects.find({}, options).toArray();
 
     return { statusCode: 200, body: JSON.stringify(allProjects) };
   } catch (error) {

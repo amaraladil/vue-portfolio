@@ -2,39 +2,50 @@
     <div class="marquee-overview" >
         <div class="marquee-container">
             <div class="marquee-content">
-                <img alt="Vue logo" src="../assets/20170729_215128.jpg" />
-                <img alt="Vue logo" src="../assets/blackjack.png" />
-                <img alt="Vue logo" src="../assets/logo.png" />
-                <img alt="Vue logo" src="../assets/20170729_215128.jpg" />
-                <img alt="Vue logo" src="../assets/Durak.png" />
-                <img alt="Vue logo" src="../assets/20170729_215013.jpg" />
-                <img alt="Vue logo" src="../assets/20170702_195708.jpg" />
-                <!-- <font-awesome-icon :icon="['fab', 'github']" /> -->
-                <img alt="Vue logo" src="../assets/20170729_215128.jpg" />
-                <img alt="Vue logo" src="../assets/blackjack.png" />
-                <img alt="Vue logo" src="../assets/realtor-new.png" />
-                <img alt="Vue logo" src="../assets/20170729_215128.jpg" />
-                <img alt="Vue logo" src="../assets/Durak.png" />
-                <img alt="Vue logo" src="../assets/20170729_215013.jpg" />
-                <img alt="Vue logo" src="../assets/20170702_195708.jpg" />
-                <img alt="Vue logo" src="../assets/logo.png" />
+                <v-icon name="co-vue-js" />
+                <v-icon name="si-nodedotjs" />
+                <v-icon name="co-html5" />
+                <v-icon name="co-css3-shiled" />
+                <v-icon name="co-ibm" />
+                <v-icon name="si-postgresql" />
+                <v-icon name="si-csharp" />
+                <v-icon name="co-cplusplus" />
+                <v-icon name="co-python" />
+                <v-icon name="co-java" />
+                <v-icon name="co-mongodb" />
+                <v-icon name="si-fastapi" />
+                <v-icon name="si-php" />
+                <v-icon name="co-react" />
+                <v-icon name="si-googlecloud" />
+                <v-icon name="co-mysql" />
+                <v-icon name="co-ruby" />
+                <v-icon name="si-supabase" />
+                <v-icon name="si-dotnet " />
+                <v-icon name="si-tailwindcss" />
+                <v-icon name="si-bootstrap" />
             </div>
             <div class="marquee-content">
-                <img alt="Vue logo" src="../assets/20170729_215128.jpg" />
-                <img alt="Vue logo" src="../assets/blackjack.png" />
-                <img alt="Vue logo" src="../assets/logo.png" />
-                <img alt="Vue logo" src="../assets/20170729_215128.jpg" />
-                <img alt="Vue logo" src="../assets/Durak.png" />
-                <img alt="Vue logo" src="../assets/20170729_215013.jpg" />
-                <img alt="Vue logo" src="../assets/20170702_195708.jpg" />
-                <img alt="Vue logo" src="../assets/20170729_215128.jpg" />
-                <img alt="Vue logo" src="../assets/blackjack.png" />
-                <img alt="Vue logo" src="../assets/realtor-new.png" />
-                <img alt="Vue logo" src="../assets/20170729_215128.jpg" />
-                <img alt="Vue logo" src="../assets/Durak.png" />
-                <img alt="Vue logo" src="../assets/20170729_215013.jpg" />
-                <img alt="Vue logo" src="../assets/20170702_195708.jpg" />
-                <img alt="Vue logo" src="../assets/logo.png" />
+                <v-icon name="co-vue-js" />
+                <v-icon name="si-nodedotjs" />
+                <v-icon name="co-html5" />
+                <v-icon name="co-css3-shiled" />
+                <v-icon name="co-ibm" />
+                <v-icon name="si-postgresql" />
+                <v-icon name="si-csharp" />
+                <v-icon name="co-cplusplus" />
+                <v-icon name="co-python" />
+                <v-icon name="co-java" />
+                <v-icon name="co-mongodb" />
+                <v-icon name="si-fastapi" />
+                <v-icon name="si-php" />
+                <v-icon name="co-react" />
+                <v-icon name="si-googlecloud" />
+                <v-icon name="co-mysql" />
+                <v-icon name="co-ruby" />
+                <v-icon name="si-supabase" />
+                <v-icon name="si-dotnet " />
+                <v-icon name="si-tailwindcss" />
+                <v-icon name="si-bootstrap" />
             </div>
         </div>
     </div>
@@ -72,15 +83,19 @@ export default {
 
     .marquee-content {
         display: inline-flex !important;
-        background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
-        animation: marquee 45s linear infinite;
+        /* background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c); */
+        animation: marquee 35s linear infinite;
 
 
         img {
             height: 10em;
             margin-right: 10px;
             width: 170px;
-            
+        }
+        svg {
+            height: 10em;
+            margin-right: 10px;
+            width: 170px;
         }
     }
 
