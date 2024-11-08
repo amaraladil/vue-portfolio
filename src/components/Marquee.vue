@@ -1,37 +1,52 @@
 <template>
     <div class="marquee-overview" >
         <div class="marquee-container">
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
-            <img alt="Vue logo" src="../assets/logo.png" />
+            <div class="marquee-content">
+                <v-icon name="co-vue-js" />
+                <v-icon name="si-nodedotjs" />
+                <v-icon name="co-html5" />
+                <v-icon name="co-css3-shiled" />
+                <v-icon name="co-ibm" />
+                <v-icon name="si-postgresql" />
+                <v-icon name="si-csharp" />
+                <v-icon name="co-cplusplus" />
+                <v-icon name="co-python" />
+                <v-icon name="co-java" />
+                <v-icon name="co-mongodb" />
+                <v-icon name="si-fastapi" />
+                <v-icon name="si-php" />
+                <v-icon name="co-react" />
+                <v-icon name="si-googlecloud" />
+                <v-icon name="co-mysql" />
+                <v-icon name="co-ruby" />
+                <v-icon name="si-supabase" />
+                <v-icon name="si-dotnet " />
+                <v-icon name="si-tailwindcss" />
+                <v-icon name="si-bootstrap" />
+            </div>
+            <div class="marquee-content">
+                <v-icon name="co-vue-js" />
+                <v-icon name="si-nodedotjs" />
+                <v-icon name="co-html5" />
+                <v-icon name="co-css3-shiled" />
+                <v-icon name="co-ibm" />
+                <v-icon name="si-postgresql" />
+                <v-icon name="si-csharp" />
+                <v-icon name="co-cplusplus" />
+                <v-icon name="co-python" />
+                <v-icon name="co-java" />
+                <v-icon name="co-mongodb" />
+                <v-icon name="si-fastapi" />
+                <v-icon name="si-php" />
+                <v-icon name="co-react" />
+                <v-icon name="si-googlecloud" />
+                <v-icon name="co-mysql" />
+                <v-icon name="co-ruby" />
+                <v-icon name="si-supabase" />
+                <v-icon name="si-dotnet " />
+                <v-icon name="si-tailwindcss" />
+                <v-icon name="si-bootstrap" />
+            </div>
         </div>
     </div>
 </template>
@@ -42,39 +57,55 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
     .marquee-overview {
         overflow: hidden; 
         /* height: 30em; */
         /* bottom: 300px; */
-        position: relative;
+        /* position: relative;
+        white-space: nowrap; */
     }
 
     .marquee-container {
-        display: flex;
+        /* display: flex; */
+        overflow: hidden;
         white-space: nowrap;
         bottom: -50px;
         transform: translateX(-5vw) translateY(10px) rotate(-3deg); ;
         z-index: 1;
-        width: 140vw;
+        /* width: 140vw; */
+        width: 4000px;
         @apply bg-gray-500;
-        padding: 0 10em 10em 10em;
+        padding: 0.5em 0 10em 1em;
         position: relative;
         
-        & img {
+    }
+
+    .marquee-content {
+        display: inline-flex !important;
+        /* background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c); */
+        animation: marquee 35s linear infinite;
+
+
+        img {
             height: 10em;
-            margin-right: 20px;
+            margin-right: 10px;
             width: 170px;
-            animation: marquee 15s linear infinite;
+        }
+        svg {
+            height: 10em;
+            margin-right: 10px;
+            width: 170px;
         }
     }
 
+
         @keyframes marquee {
         0% {
-            transform: translateX(-10vw);
+            transform: translateX(0);
         }
         100% {
-            transform: translateX(-110vw);
+            transform: translateX(-100%);
         }
     }
 

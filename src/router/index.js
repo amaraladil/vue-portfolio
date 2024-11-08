@@ -4,7 +4,7 @@ import AboutView from "../views/AboutView.vue";
 const routes = [
   {
     path: "/",
-    name: "about",
+    name: "home",
     meta: {
       title: "All about " + process.env.VUE_APP_TITLE,
     },

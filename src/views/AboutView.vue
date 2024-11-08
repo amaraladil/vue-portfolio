@@ -85,7 +85,7 @@ import MarqueeInfinite from "@/components/Marquee.vue";
 import Projects from "@/components/Projects.vue";
 
 export default {
-  name: "about",
+  name: "home",
   components: {
     ClayMan,
     LeftTile,
@@ -105,13 +105,13 @@ html {
   border-top: 1px solid #000;
   display: flex;
   position: relative;
-  @apply bg-gray-500 px-10;
+  @apply bg-gray-500 px-10 text-lg font-serif;
 }
 
 .left-side {
   /* width: 50%; */
-  overflow-x: visible;
-  @apply w-1/3 sm:w-1/2;
+  /* overflow-x: visible; */
+  @apply w-2/5 sm:w-1/2;
 }
 
 .right-side {

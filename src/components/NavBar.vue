@@ -2,26 +2,30 @@
     <nav>
         <ul class="">
             <li>
-                <router-link :to="{ name:'about' }" class="">
-                    <font-awesome-icon :icon="['fas', 'home']" />
+                <router-link :to="{ name:'home' }" @click.native="scrollToTop">
+                    <v-icon name="hi-solid-home" />
+                    <!-- <font-awesome-icon :icon="['fas', 'home']" /> -->
                     <div class="link-text">Home</div>
                 </router-link>
             </li>
             <li>
-                <router-link :to="{ name: 'about', hash: '#experience' }">
-                    <font-awesome-icon :icon="['fas', 'briefcase']" />
+                <router-link :to="{ name: 'home', hash: '#experience' }">
+                    <v-icon name="fa-briefcase" scale="2" />
+                    <!-- <font-awesome-icon :icon="['fas', 'briefcase']" /> -->
                     <div class="link-text">Exp.</div>
                 </router-link>
             </li>
             <li>
-                <router-link :to="{ name: 'about', hash: '#project' }">
-                    <font-awesome-icon :icon="['fas', 'folder-open']" />
+                <router-link :to="{ name: 'home', hash: '#project' }">
+                    <v-icon name="fa-folder-open" />
+                    <!-- <font-awesome-icon :icon="['fas', 'folder-open']" /> -->
                     <div class="link-text">Projects</div>
                 </router-link>
             </li>
             <li>
                 <a v-bind:href="linkedInUrl" class="">
-                    <font-awesome-icon :icon="['fab', 'linkedin']"/>
+                    <v-icon name="fa-linkedin" scale="1" />
+                    <!-- <font-awesome-icon :icon="['fab', 'linkedin']"/> -->
                     <div class="link-text">LinkedIn</div>
                 </a>
             </li>
@@ -42,13 +46,16 @@ export default {
         toggle() {
             this.isOpen = !this.isOpen;
         },
+        scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        },
     },
 };
 </script>
 
 <style scoped>
 nav {
-    @apply fixed z-10 w-full md:w-20 md:h-screen bg-gradient-to-t from-indigo-500 to-purple-500 md:transition-all md:duration-200 md:ease-in-out bottom-0 w-full h-20;
+    @apply fixed z-10 w-full md:w-20 md:h-screen bg-gradient-to-t from-indigo-500 to-purple-500 md:transition-all md:duration-200 md:ease-in-out bottom-0 h-20;
 
     &:hover {
         @apply md:w-52;
@@ -76,6 +83,7 @@ nav a {
 svg {
     min-width: 2rem;
     margin: 0 0.5rem 0 1.5rem;
+    @apply h-6 w-8;
 }
 
 .link-text {
