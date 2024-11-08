@@ -27,6 +27,7 @@ import {
   CoMysql,
   CoRuby,
   CoCplusplus,
+  CoTensorflow,
 } from "oh-vue-icons/icons/co";
 import {
   SiFastapi,
@@ -39,6 +40,7 @@ import {
   SiDotnet,
   SiTailwindcss,
   SiBootstrap,
+  SiExpress,
 } from "oh-vue-icons/icons/si";
 
 import router from "./router";
@@ -61,6 +63,7 @@ addIcons(
   CoMysql,
   CoRuby,
   CoCplusplus,
+  CoTensorflow,
   SiFastapi,
   SiCsharp,
   SiNodedotjs,
@@ -70,7 +73,8 @@ addIcons(
   SiSupabase,
   SiDotnet,
   SiTailwindcss,
-  SiBootstrap
+  SiBootstrap,
+  SiExpress
 );
 
 library.add(fas, fab, far);

@@ -10,7 +10,7 @@ exports.handler = async function (event, context) {
     const database = client.db("projects");
     const projects = database.collection("projects2");
     const options = {
-      sort: { _id: 1 }, // Replace 'columnName' with the actual column name you want to sort by
+      sort: { _id: -1 }, // Replace 'columnName' with the actual column name you want to sort by
     };
 
     const allProjects = await projects.find({}, options).toArray();
