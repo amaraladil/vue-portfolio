@@ -38,7 +38,7 @@
           </div>
         <router-link title="Git Hub" :to="{ name: 'project', params: { projectId: '1' } }"
                         class="text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg px-4 py-2 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-bold">
-                <font-awesome-icon class="" :icon="['fab', 'github']"/>
+                <!-- <font-awesome-icon class="" :icon="['fab', 'github']"/> -->
 
                 Source Code
           <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">

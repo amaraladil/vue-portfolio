@@ -10,11 +10,6 @@
     "test": "jest"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.6.0",
-    "@fortawesome/free-brands-svg-icons": "^6.6.0",
-    "@fortawesome/free-regular-svg-icons": "^6.6.0",
-    "@fortawesome/free-solid-svg-icons": "^6.6.0",
-    "@fortawesome/vue-fontawesome": "^3.0.8",
     "@netlify/functions": "^2.8.2",
     "@types/node": "^20.17.6",
     "autoprefixer": "^9.8.8",
