@@ -36,6 +36,7 @@ import {
   SiTailwindcss,
   SiBootstrap,
   SiExpress,
+  SiGithub,
 } from "oh-vue-icons/icons/si";
 
 import router from "./router";
@@ -69,7 +70,8 @@ addIcons(
   SiDotnet,
   SiTailwindcss,
   SiBootstrap,
-  SiExpress
+  SiExpress,
+  SiGithub
 );
 
 createApp(App)

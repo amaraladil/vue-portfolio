@@ -91,12 +91,6 @@ export default {
         animation: marquee 35s linear infinite;
 
         @apply text-indigo-900;
-
-        img {
-            height: 10em;
-            margin-right: 10px;
-            width: 170px;
-        }
         svg {
             height: 10em;
             margin-right: 10px;
