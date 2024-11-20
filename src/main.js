@@ -2,7 +2,7 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import "./registerServiceWorker";
 import { OhVueIcon, addIcons } from "oh-vue-icons";
-import { HiSolidHome } from "oh-vue-icons/icons/hi";
+import { HiSolidHome, HiSolidSun, HiSolidMoon } from "oh-vue-icons/icons/hi";
 import {
   FaFolderOpen,
   FaBriefcase,
@@ -36,6 +36,7 @@ import {
   SiTailwindcss,
   SiBootstrap,
   SiExpress,
+  SiGithub,
 } from "oh-vue-icons/icons/si";
 
 import router from "./router";
@@ -43,6 +44,8 @@ import store from "./store";
 
 addIcons(
   HiSolidHome,
+  HiSolidSun,
+  HiSolidMoon,
   FaFolderOpen,
   FaBriefcase,
   FaLinkedin,
@@ -69,7 +72,8 @@ addIcons(
   SiDotnet,
   SiTailwindcss,
   SiBootstrap,
-  SiExpress
+  SiExpress,
+  SiGithub
 );
 
 createApp(App)

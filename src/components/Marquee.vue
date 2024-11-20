@@ -79,7 +79,7 @@ export default {
         z-index: 1;
         /* width: 140vw; */
         width: 4000px;
-        @apply bg-gradient-to-t from-indigo-500 to-purple-500;
+        @apply bg-gradient-to-t from-indigo-500 to-purple-500 dark:from-gray-700 dark:to-gray-700;
         padding: 0.5em 0 10em 1em;
         position: relative;
         
@@ -90,13 +90,7 @@ export default {
         /* background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c); */
         animation: marquee 35s linear infinite;
 
-        @apply text-indigo-900;
-
-        img {
-            height: 10em;
-            margin-right: 10px;
-            width: 170px;
-        }
+        @apply text-indigo-900 dark:text-indigo-400;
         svg {
             height: 10em;
             margin-right: 10px;
