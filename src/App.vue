@@ -28,7 +28,7 @@ export default {
 @import 'tailwindcss/utilities';
 
 body {
-  @apply bg-gradient-to-br from-purple-300 to-indigo-300 overscroll-none;
+  @apply  bg-purple-300 dark:bg-indigo-900 overscroll-none;
 }
 
 html {

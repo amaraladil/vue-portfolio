@@ -1,5 +1,5 @@
 <template>
-    <div class="px-10 flex flex-col md:flex-row items-center bg-gradient-to-tr from-electric-violet-100 to-electric-violet-300">
+    <div class="px-10 flex flex-col md:flex-row items-center bg-gradient-to-tr from-electric-violet-100 to-electric-violet-300 dark:from-gray-700 dark:to-gray-800 dark:text-gray-300">
       <div class="md:w-1/2 p-4 text-left font-serif">
         <h3 class="text-3xl">{{ project.name }}</h3>
         <p class="pb-3 text-lg ">

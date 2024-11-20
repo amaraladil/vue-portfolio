@@ -72,11 +72,9 @@ export default {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         },
         toggleTheme() {
-            console.log("Toggle theme"+ this.isDark);
             this.isDark = !this.isDark;
             document.documentElement.classList.toggle('dark', this.isDark);
             localStorage.theme = this.isDark ? 'dark' : 'light';
-            console.log("is Dark: "+ this.isDark);
         },
     },
 };
@@ -84,7 +82,7 @@ export default {
 
 <style scoped>
 nav {
-    @apply fixed z-10 w-full md:w-20 md:h-screen bg-gradient-to-t  dark:from-gray-600 dark:via-gray-600 dark:to-gray-700 dark:text-red-200 from-indigo-500 via-indigo-500 to-purple-600 md:bg-gradient-to-r md:transition-all md:duration-200 md:ease-in-out bottom-0 h-20;
+    @apply fixed z-10 w-full md:w-20 md:h-screen bg-gradient-to-t  dark:from-gray-700 dark:via-gray-700 dark:to-gray-800 dark:text-red-200 from-indigo-500 via-indigo-500 to-purple-600 md:bg-gradient-to-r md:transition-all md:duration-200 md:ease-in-out bottom-0 h-20;
 
     &:hover {
         @apply md:w-44;

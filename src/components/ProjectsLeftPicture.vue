@@ -1,5 +1,5 @@
 <template>
-    <div class="px-10 flex flex-col md:flex-row items-center  bg-gradient-to-br from-electric-violet-100 to-electric-violet-300 ">
+    <div class="px-10 flex flex-col md:flex-row items-center  bg-gradient-to-br from-electric-violet-100 to-electric-violet-300 dark:from-gray-700 dark:to-gray-800 dark:text-gray-300">
       <div class="md:w-1/2 p-4 ">
         <div class="rounded-lg border-4 border-indigo-600">
           <img alt="Vue logo" :src="getImageUrl(project.image)" class="w-full"/>

@@ -90,7 +90,7 @@ export default {
         /* background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c); */
         animation: marquee 35s linear infinite;
 
-        @apply text-indigo-900 dark:text-indigo-200;
+        @apply text-indigo-900 dark:text-indigo-400;
         svg {
             height: 10em;
             margin-right: 10px;
