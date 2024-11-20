@@ -14,6 +14,11 @@ export default {
   components: {
     NavBar
   },
+  data() {
+    return {
+      isDark: false,
+    }
+  }
 };
 </script>
 
