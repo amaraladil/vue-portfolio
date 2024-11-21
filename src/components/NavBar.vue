@@ -19,18 +19,16 @@
                     <div class="link-text">Projects</div>
                 </router-link>
             </li>
-            <li class="spacer">
+            <li>
                 <button @click="toggleTheme" class="">
-                    <div v-if="!isDark" class="toggle">
+                    <div v-if="!isDark" class="toggle" title="Toggle to Dark Mode">
                         <v-icon  name="hi-solid-sun" scale="1" />
                         <div class="link-text">Light</div>
                     </div>
-                    <div v-else="isDark" class="toggle">
+                    <div v-else="isDark" class="toggle" title="Toggle to Light Mode">
                         <v-icon  name="hi-solid-moon" scale="1" />
                         <div class="link-text">Dark</div>
                     </div>
-                    
-                    
                 </button>
             </li>
             <li>
@@ -98,7 +96,7 @@ li {
     @apply w-full;
 }
 
-li.spacer {
+li:nth-last-child(2) {
     @apply mt-auto;
 }
 
