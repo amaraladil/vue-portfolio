@@ -25,7 +25,7 @@
                         <v-icon  name="hi-solid-sun" scale="1" />
                         <div class="link-text">Light</div>
                     </div>
-                    <div v-else="isDark" class="toggle" title="Toggle to Light Mode">
+                    <div v-else class="toggle" title="Toggle to Light Mode">
                         <v-icon  name="hi-solid-moon" scale="1" />
                         <div class="link-text">Dark</div>
                     </div>

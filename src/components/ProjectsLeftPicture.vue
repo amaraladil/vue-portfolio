@@ -8,7 +8,7 @@
       </div>
 
 
-      <div class="md:w-1/2 p-4 text-left font-serif">
+      <div class="md:w-1/2 p-4 text-left font-source">
 
         <h3 class="text-3xl">{{ project.name }}</h3>    
          <p class="pb-3 text-lg">
