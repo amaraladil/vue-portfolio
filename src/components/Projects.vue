@@ -1,14 +1,14 @@
 <template>
-    <section id="project" class="pb-10 ">
+    <div id="project" class="pb-10 ">
         <div v-if="errorMessage" class="text-center text-red-500">
             {{ errorMessage }}
         </div>
 
         <div v-else>
-            <component v-for="project in Projects" :key="project.id" :is="project.component" :title="project.name" :content="project.description" :demoLink="project.demoLink" :project="project" />
+            <component v-for="project in Projects" :key="project.id" :is="project.component" :project="project" />
         </div>
 
-  </section>
+  </div>
 </template>
 
 <script>
@@ -54,6 +54,7 @@ export default {
                     component: count % 2 == 0 ? 'ProjectsRightPicture' : 'ProjectsLeftPicture',
                     icons: project.code,
                     image: project.image,
+
                 };
             });
             saveWithExpiry('projects', this.Projects); 
@@ -63,4 +64,15 @@ export default {
     },
 };
 </script>
+
+<style>
+.techstack svg {
+  @apply h-16 w-16 md:h-16 md:w-16;
+}
+
+img {
+  @apply z-0;
+}
+
+</style>
 

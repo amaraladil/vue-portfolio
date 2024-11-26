@@ -36,7 +36,7 @@ html {
 }
 
 main {
-  // overflow-x: hidden;
+  overflow-x: clip;
   @apply ml-0 md:ml-20 pb-10 md:pb-0 font-sans;
 }
 

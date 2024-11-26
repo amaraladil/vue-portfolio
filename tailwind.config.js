@@ -5,6 +5,9 @@ module.exports = {
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+        source: ["Source Sans Pro", "sans-serif"],
+      },
       colors: {
         "electric-violet": {
           DEFAULT: "#9144EF",

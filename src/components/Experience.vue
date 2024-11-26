@@ -5,42 +5,39 @@
             <div class="sticky-container">
                 <!-- Content that will stick -->
                 <div class="sticky-content">
-                <img alt="Vue logo" src="../assets/logo.png" class="w-full" />
+                  <img alt="Vue logo" src="../assets/logo.png" class="w-full" />
                 </div>
             </div>
         </div>
-        <div class="right-side px-6 items-center mb-5">
+        <div class="right-side ">
             <div class="right-side-layers">
-                <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel numquam
-                veritatis, quis dignissimos molestias mollitia debitis sapiente quae
-                ullam ea quaerat laboriosam iste. Corrupti quasi est ratione
-                cupiditate at repellendus!
-                </p>
+                <h3>Helpdesk Support</h3>
+                <h4>Centennial College <span>Mar - Jun 2024</span></h4>
+                <ul>
+                    <li>Provided first-level technical support to students and staff in person and on ServiceNow ticketing system</li>
+                    <li>Delivered exceptional customer service by communicating complex technical issues in an understandable manner</li>
+                </ul>
             </div>
             <div class="right-side-layers">
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
-                provident neque officiis amet, distinctio ad obcaecati. Cupiditate,
-                repellendus architecto delectus impedit ea fuga eos sed molestias
-                magnam laborum? Impedit, laboriosam?
-                </p>
+                <h3>Helpdesk Analyst</h3>
+                <h4>ESRI Canada <span>Apr - Jun 2018</span></h4>
+                <ul>
+                    <li>Revitalized new documentations with the manager to increase employee knowledge and reduce the number of calls related to the new technologies by 35%.</li>
+                    <li>Facilitated with coworkers office space and independently organized inventory to create a more efficient and comfortable work environment.</li>
+                </ul>
             </div>
             <div class="right-side-layers">
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-                aspernatur aperiam quos exercitationem nam soluta fugit quod eaque
-                nobis, rem, in facilis omnis expedita minima a incidunt cupiditate
-                inventore odio?
-                </p>
+                <h3>Programmer Tutor</h3>
+                <h4>Freelance <span>Dec 2017 - Feb 2018</span></h4>
+                <ul>
+                    <li>Provided tutoring services to students in the Computer Programmer Analyst program at Durham College</li>
+                    <li>Assisted students with assignments and projects in C#, Java, and SQL</li>
+                </ul>
             </div>
             <div class="right-side-layers">
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-                expedita cupiditate architecto perspiciatis ab officiis cum dolore
-                velit quas, mollitia totam delectus iusto non minima libero! Sapiente
-                nemo voluptatibus earum!
-                </p>
+                <h3>Education</h3>
+                <h4 class="edu">Bachelor's in Computer Science <span class="edu">OnTech University</span><span>Sept 2018 - May 2020</span></h4>
+                <h4 class="edu">Adv Diploma of Computer Programmer Analyst <span class="edu">Durham College</span> <span>Sept 2015 - May 2018</span></h4>
             </div>
         </div>
     </div>
@@ -58,7 +55,7 @@ export default {
   /* border-top: 10px solid #000; */
   display: flex;
   position: relative;
-  @apply bg-indigo-500 px-10 text-lg font-serif dark:bg-gray-700 dark:text-gray-200;
+  @apply bg-indigo-500 px-5 text-lg font-serif dark:bg-gray-700 dark:text-gray-200;
 }
 
 .left-side {
@@ -71,11 +68,41 @@ export default {
   width: 50%;
   /* vertical-align: middle; */
   height: 100vh; /* Make this taller to see the effect */
+  @apply pl-4 mt-28 items-center mb-5;
 }
 
 .right-side-layers {
   height: 60vh;
-  @apply flex flex-wrap items-center;
+
+  @apply font-source;
+
+
+  & h3 {
+    @apply text-2xl font-bold;
+  }
+  & h4 {
+    @apply flex flex-col text-lg italic;
+
+    & span {
+      @apply  text-sm;
+    }
+  }
+
+  & ul {
+    @apply list-disc list-outside pl-4;
+
+    & li {
+      @apply mb-2;
+    }
+  }
+}
+
+h4.edu {
+  @apply text-2xl py-2 !important;
+
+  span.edu {
+    @apply text-xl !important;
+  }
 }
 
 .sticky-container {
@@ -89,25 +116,4 @@ export default {
   @apply bg-gray-400 dark:bg-gray-600;
 }
 
-.custom-shape-divider-top-1710910706 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-top-1710910973 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 349px;
-}
-
-.custom-shape-divider-top-1710910973 .shape-fill {
-  --tw-bg-opacity: 1;
-  fill: url(#gradient-0);
-  /* fill: rgba(107, 114, 128, var(--tw-bg-opacity)); */
-}
 </style>

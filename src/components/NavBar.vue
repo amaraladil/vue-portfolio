@@ -19,18 +19,16 @@
                     <div class="link-text">Projects</div>
                 </router-link>
             </li>
-            <li class="spacer">
+            <li>
                 <button @click="toggleTheme" class="">
-                    <div v-if="!isDark" class="toggle">
+                    <div v-if="!isDark" class="toggle" title="Toggle to Dark Mode">
                         <v-icon  name="hi-solid-sun" scale="1" />
                         <div class="link-text">Light</div>
                     </div>
-                    <div v-else="isDark" class="toggle">
+                    <div v-else class="toggle" title="Toggle to Light Mode">
                         <v-icon  name="hi-solid-moon" scale="1" />
                         <div class="link-text">Dark</div>
                     </div>
-                    
-                    
                 </button>
             </li>
             <li>
@@ -44,6 +42,8 @@
 </template>
 
 <script>
+import { loadWithExpiry, saveWithoutExpiry } from '@/utils/storage';
+
 export default {
     name: 'NavBar',
     data() {
@@ -54,12 +54,10 @@ export default {
         };
     },
     created() {
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            console.log("Dark mode");
+        if (loadWithExpiry('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             this.isDark = true;
             document.documentElement.classList.add('dark');
         } else {
-            console.log("Light mode");
             this.isDark = false;
             document.documentElement.classList.remove('dark');
         }
@@ -74,7 +72,7 @@ export default {
         toggleTheme() {
             this.isDark = !this.isDark;
             document.documentElement.classList.toggle('dark', this.isDark);
-            localStorage.theme = this.isDark ? 'dark' : 'light';
+            saveWithoutExpiry('theme', this.isDark ? 'dark' : 'light');
         },
     },
 };
@@ -82,10 +80,10 @@ export default {
 
 <style scoped>
 nav {
-    @apply fixed z-10 w-full md:w-20 md:h-screen bg-gradient-to-t  dark:from-gray-700 dark:via-gray-700 dark:to-gray-800 dark:text-red-200 from-indigo-500 via-indigo-500 to-purple-600 md:bg-gradient-to-r md:transition-all md:duration-200 md:ease-in-out bottom-0 h-20;
+    @apply fixed z-10 w-full md:w-20 md:h-screen bg-gradient-to-t  dark:from-gray-700 dark:via-gray-700 dark:to-gray-800 dark:text-red-200 from-indigo-500 via-indigo-500 to-purple-600 md:bg-gradient-to-r md:transition-all md:duration-300 md:ease-in-out bottom-0 h-20;
 
     &:hover {
-        @apply md:w-44;
+        @apply md:w-48;
     }
     
 }
@@ -98,7 +96,7 @@ li {
     @apply w-full;
 }
 
-li.spacer {
+li:nth-last-child(2) {
     @apply mt-auto;
 }
 
