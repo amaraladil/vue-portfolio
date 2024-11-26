@@ -1,5 +1,5 @@
 <template>
-    <section id="project" class="pb-10 ">
+    <div id="project" class="pb-10 ">
         <div v-if="errorMessage" class="text-center text-red-500">
             {{ errorMessage }}
         </div>
@@ -8,7 +8,7 @@
             <component v-for="project in Projects" :key="project.id" :is="project.component" :title="project.name" :content="project.description" :demoLink="project.demoLink" :project="project" />
         </div>
 
-  </section>
+  </div>
 </template>
 
 <script>
