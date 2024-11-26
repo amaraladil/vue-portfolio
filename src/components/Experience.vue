@@ -12,29 +12,26 @@
         <div class="right-side ">
             <div class="right-side-layers">
                 <h3>Helpdesk Support</h3>
-                <h4>Centennial College <span>March - June 2024</span></h4>
+                <h4>Centennial College <span>Mar - Jun 2024</span></h4>
                 <ul>
-                    <li>Provided technical support to students and staff in person and on ServiceNow ticketing system</li>
-                    <li>Assisted with troubleshooting hardware and software issues</li>
-                    <li>Managed and maintained computer labs</li>
+                    <li>Provided first-level technical support to students and staff in person and on ServiceNow ticketing system</li>
+                    <li>Delivered exceptional customer service by communicating complex technical issues in an understandable manner</li>
                 </ul>
             </div>
             <div class="right-side-layers">
-                <h3>Web Developer</h3>
-                <h4>Freelance <span>June 2024 - Present</span></h4>
+                <h3>Helpdesk Analyst</h3>
+                <h4>ESRI Canada <span>Apr - Jun 2018</span></h4>
                 <ul>
-                    <li>Developed websites for small businesses using HTML, CSS, and JavaScript</li>
-                    <li>Designed and implemented responsive web pages</li>
-                    <li>Optimized websites for search engines</li>
+                    <li>Revitalized new documentations with the manager to increase employee knowledge and reduce the number of calls related to the new technologies by 35%.</li>
+                    <li>Facilitated with coworkers office space and independently organized inventory to create a more efficient and comfortable work environment.</li>
                 </ul>
             </div>
             <div class="right-side-layers">
-                <h3>Software Developer</h3>
-                <h4>Company Name <span>June 2024 - Present</span></h4>
+                <h3>Programmer Tutor</h3>
+                <h4>Freelance <span>Dec 2017 - Feb 2018</span></h4>
                 <ul>
-                    <li>Developed software applications using Java and Python</li>
-                    <li>Collaborated with team members to design and implement new features</li>
-                    <li>Tested and debugged code to ensure functionality</li>
+                    <li>Provided tutoring services to students in the Computer Programmer Analyst program at Durham College</li>
+                    <li>Assisted students with assignments and projects in C#, Java, and SQL</li>
                 </ul>
             </div>
             <div class="right-side-layers">
@@ -71,7 +68,7 @@ export default {
   width: 50%;
   /* vertical-align: middle; */
   height: 100vh; /* Make this taller to see the effect */
-  @apply pl-4 mt-10 items-center mb-5;
+  @apply pl-4 mt-28 items-center mb-5;
 }
 
 .right-side-layers {
@@ -93,6 +90,10 @@ export default {
 
   & ul {
     @apply list-disc list-outside pl-4;
+
+    & li {
+      @apply mb-2;
+    }
   }
 }
 
