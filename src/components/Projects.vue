@@ -70,5 +70,9 @@ export default {
   @apply h-16 w-16 md:h-14 md:w-12;
 }
 
+img {
+  @apply z-0;
+}
+
 </style>
 
