@@ -11,7 +11,7 @@
         </p>
         
         <div class="flex md:justify-end order-3">
-          <a v-if="project.demoLink" :href="demoLink" target="_blank" rel="noopener noreferrer"
+          <a v-if="project.demoLink" :href="project.demoLink" target="_blank" rel="noopener noreferrer"
                         class="border border-indigo-500 bg-gray-700 hover:bg-gray-600 text-gray-200 hover:text-electric-violet-300 font-bold py-2 px-4 rounded mx-1">
               Demo
           </a>

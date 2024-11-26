@@ -5,7 +5,7 @@
             <div class="sticky-container">
                 <!-- Content that will stick -->
                 <div class="sticky-content">
-                <img alt="Vue logo" src="../assets/logo.png" class="w-full" />
+                  <img alt="Vue logo" src="../assets/logo.png" class="w-full" />
                 </div>
             </div>
         </div>
@@ -89,25 +89,4 @@ export default {
   @apply bg-gray-400 dark:bg-gray-600;
 }
 
-.custom-shape-divider-top-1710910706 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-top-1710910973 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 349px;
-}
-
-.custom-shape-divider-top-1710910973 .shape-fill {
-  --tw-bg-opacity: 1;
-  fill: url(#gradient-0);
-  /* fill: rgba(107, 114, 128, var(--tw-bg-opacity)); */
-}
 </style>

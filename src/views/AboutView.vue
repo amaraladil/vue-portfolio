@@ -78,5 +78,4 @@ export default {
   fill: url(#gradient-0);
   /* fill: rgba(107, 114, 128, var(--tw-bg-opacity)); */
 }
-
 </style>
