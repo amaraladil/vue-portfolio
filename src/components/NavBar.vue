@@ -42,6 +42,8 @@
 </template>
 
 <script>
+import { loadWithExpiry, saveWithoutExpiry } from '@/utils/storage';
+
 export default {
     name: 'NavBar',
     data() {
@@ -52,12 +54,10 @@ export default {
         };
     },
     created() {
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            console.log("Dark mode");
+        if (loadWithExpiry('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             this.isDark = true;
             document.documentElement.classList.add('dark');
         } else {
-            console.log("Light mode");
             this.isDark = false;
             document.documentElement.classList.remove('dark');
         }
@@ -72,7 +72,7 @@ export default {
         toggleTheme() {
             this.isDark = !this.isDark;
             document.documentElement.classList.toggle('dark', this.isDark);
-            localStorage.theme = this.isDark ? 'dark' : 'light';
+            saveWithoutExpiry('theme', this.isDark ? 'dark' : 'light');
         },
     },
 };
