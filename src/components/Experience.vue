@@ -9,38 +9,38 @@
                 </div>
             </div>
         </div>
-        <div class="right-side px-6 items-center mb-5">
+        <div class="right-side ">
             <div class="right-side-layers">
-                <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel numquam
-                veritatis, quis dignissimos molestias mollitia debitis sapiente quae
-                ullam ea quaerat laboriosam iste. Corrupti quasi est ratione
-                cupiditate at repellendus!
-                </p>
+                <h3>Helpdesk Support</h3>
+                <h4>Centennial College <span>March - June 2024</span></h4>
+                <ul>
+                    <li>Provided technical support to students and staff in person and on ServiceNow ticketing system</li>
+                    <li>Assisted with troubleshooting hardware and software issues</li>
+                    <li>Managed and maintained computer labs</li>
+                </ul>
             </div>
             <div class="right-side-layers">
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
-                provident neque officiis amet, distinctio ad obcaecati. Cupiditate,
-                repellendus architecto delectus impedit ea fuga eos sed molestias
-                magnam laborum? Impedit, laboriosam?
-                </p>
+                <h3>Web Developer</h3>
+                <h4>Freelance <span>June 2024 - Present</span></h4>
+                <ul>
+                    <li>Developed websites for small businesses using HTML, CSS, and JavaScript</li>
+                    <li>Designed and implemented responsive web pages</li>
+                    <li>Optimized websites for search engines</li>
+                </ul>
             </div>
             <div class="right-side-layers">
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-                aspernatur aperiam quos exercitationem nam soluta fugit quod eaque
-                nobis, rem, in facilis omnis expedita minima a incidunt cupiditate
-                inventore odio?
-                </p>
+                <h3>Software Developer</h3>
+                <h4>Company Name <span>June 2024 - Present</span></h4>
+                <ul>
+                    <li>Developed software applications using Java and Python</li>
+                    <li>Collaborated with team members to design and implement new features</li>
+                    <li>Tested and debugged code to ensure functionality</li>
+                </ul>
             </div>
             <div class="right-side-layers">
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-                expedita cupiditate architecto perspiciatis ab officiis cum dolore
-                velit quas, mollitia totam delectus iusto non minima libero! Sapiente
-                nemo voluptatibus earum!
-                </p>
+                <h3>Education</h3>
+                <h4 class="edu">Bachelor's in Computer Science <span class="edu">OnTech University</span><span>Sept 2018 - May 2020</span></h4>
+                <h4 class="edu">Adv Diploma of Computer Programmer Analyst <span class="edu">Durham College</span> <span>Sept 2015 - May 2018</span></h4>
             </div>
         </div>
     </div>
@@ -58,7 +58,7 @@ export default {
   /* border-top: 10px solid #000; */
   display: flex;
   position: relative;
-  @apply bg-indigo-500 px-10 text-lg font-serif dark:bg-gray-700 dark:text-gray-200;
+  @apply bg-indigo-500 px-5 text-lg font-serif dark:bg-gray-700 dark:text-gray-200;
 }
 
 .left-side {
@@ -71,11 +71,37 @@ export default {
   width: 50%;
   /* vertical-align: middle; */
   height: 100vh; /* Make this taller to see the effect */
+  @apply pl-4 mt-10 items-center mb-5;
 }
 
 .right-side-layers {
   height: 60vh;
-  @apply flex flex-wrap items-center;
+
+  @apply font-source;
+
+
+  & h3 {
+    @apply text-2xl font-bold;
+  }
+  & h4 {
+    @apply flex flex-col text-lg italic;
+
+    & span {
+      @apply  text-sm;
+    }
+  }
+
+  & ul {
+    @apply list-disc list-outside pl-4;
+  }
+}
+
+h4.edu {
+  @apply text-2xl py-2 !important;
+
+  span.edu {
+    @apply text-xl !important;
+  }
 }
 
 .sticky-container {
