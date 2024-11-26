@@ -5,7 +5,7 @@
         </div>
 
         <div v-else>
-            <component v-for="project in Projects" :key="project.id" :is="project.component" :title="project.name" :content="project.description" :demoLink="project.demoLink" :project="project" />
+            <component v-for="project in Projects" :key="project.id" :is="project.component" :project="project" />
         </div>
 
   </div>
@@ -67,7 +67,7 @@ export default {
 
 <style>
 .techstack svg {
-  @apply h-16 w-16 md:h-14 md:w-12;
+  @apply h-16 w-16 md:h-16 md:w-16;
 }
 
 img {
