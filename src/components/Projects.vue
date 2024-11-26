@@ -54,6 +54,7 @@ export default {
                     component: count % 2 == 0 ? 'ProjectsRightPicture' : 'ProjectsLeftPicture',
                     icons: project.code,
                     image: project.image,
+
                 };
             });
             saveWithExpiry('projects', this.Projects); 
@@ -63,4 +64,11 @@ export default {
     },
 };
 </script>
+
+<style>
+.techstack svg {
+  @apply h-16 w-16 md:h-14 md:w-12;
+}
+
+</style>
 

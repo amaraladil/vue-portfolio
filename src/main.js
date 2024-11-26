@@ -8,6 +8,7 @@ import {
   FaBriefcase,
   FaLinkedin,
   FaGithub,
+  FaPhp,
 } from "oh-vue-icons/icons/fa";
 
 import {
@@ -21,8 +22,11 @@ import {
   CoHtml5,
   CoMysql,
   CoRuby,
+  CoRails,
   CoCplusplus,
   CoTensorflow,
+  CoVisualStudio,
+  CoUnity,
 } from "oh-vue-icons/icons/co";
 import {
   SiFastapi,
@@ -50,6 +54,7 @@ addIcons(
   FaBriefcase,
   FaLinkedin,
   FaGithub,
+  FaPhp,
   CoIbm,
   CoVueJs,
   CoReact,
@@ -60,8 +65,11 @@ addIcons(
   CoHtml5,
   CoMysql,
   CoRuby,
+  CoRails,
   CoCplusplus,
   CoTensorflow,
+  CoVisualStudio,
+  CoUnity,
   SiFastapi,
   SiCsharp,
   SiNodedotjs,
