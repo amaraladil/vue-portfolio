@@ -1,5 +1,5 @@
 <template>
-    <div class="px-10 flex flex-col md:flex-row items-center  bg-gradient-to-br from-electric-violet-100 to-electric-violet-300 dark:from-purple-900 dark:to-indigo-800 dark:text-gray-300">
+    <div class="px-10 flex flex-col md:flex-row items-center  bg-gradient-to-br from-electric-violet-100 to-electric-violet-300 dark:from-purple-900 dark:to-indigo-800 dark:text-gray-200">
       <div class="md:w-1/2 p-4 ">
         <div class="rounded-lg border-4 border-indigo-600">
           <img alt="Vue logo" :src="getImageUrl(project.image)" class="w-full"/>
@@ -7,7 +7,7 @@
       </div>
 
 
-      <div class="flex flex-col md:w-1/2 p-4 text-left font-source border-b-8 border-indigo-900 dark:border-indigo-400 border-dotted md:border-0">
+      <div class="flex flex-col md:w-1/2 p-4 text-left font-source border-b-8 border-indigo-900 dark:border-indigo-300 border-dotted md:border-0">
 
         <div class="techstack order-first md:order-2">
           <v-icon v-if="project.icons" v-for="code in project.icons" :title="code.substring(3)" :name="code" class="text-indigo-900 dark:text-indigo-300" />
