@@ -2,7 +2,7 @@
     <div class="px-10 flex flex-col md:flex-row items-center bg-gradient-to-tr from-electric-violet-100 to-electric-violet-300 dark:from-purple-900 dark:to-indigo-800 dark:text-gray-300">
       <div class="flex flex-col md:w-1/2 p-4 text-left font-source border-b-8 border-indigo-900 dark:border-indigo-400 border-dotted md:border-0">
         <div class="techstack order-first md:order-2">
-          <v-icon v-if="project.icons" v-for="code in project.icons" :title="code.substring(3)" :name="code" class="text-indigo-900 dark:text-indigo-400" />
+          <v-icon v-if="project.icons" v-for="code in project.icons" :title="code.substring(3)" :name="code" class="text-indigo-900 dark:text-indigo-300" />
         </div>
 
         <h3 class="text-3xl order-1">{{ project.name }}</h3>

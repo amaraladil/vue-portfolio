@@ -79,7 +79,7 @@ export default {
         z-index: 1;
         /* width: 140vw; */
         width: 4000px;
-        @apply bg-electric-violet-200 dark:bg-gray-700 ;
+        @apply bg-purple-300 dark:bg-gray-700 ;
         padding: 0.5em 0 10em 1em;
         position: relative;
         

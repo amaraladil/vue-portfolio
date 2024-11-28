@@ -28,7 +28,7 @@ export default {
 @import 'tailwindcss/utilities';
 
 body {
-  @apply  bg-purple-300 dark:bg-indigo-900 overscroll-none;
+  @apply  bg-electric-violet-300 dark:bg-indigo-900 overscroll-none;
 }
 
 html {

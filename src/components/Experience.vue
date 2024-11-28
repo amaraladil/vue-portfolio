@@ -1,6 +1,9 @@
 <template  >
-    <div id="experience" class="container-slider">
-        <div class="left-side mt-10 mb-5">
+    <div id="experience" class="bg-purple-300 text-center font-bold font- text-4xl font-serif text-gray-900 dark:text-gray-200 pt-24 dark:bg-gray-700">
+      Experience
+    </div>
+    <div  class="container-slider">
+        <div class="left-side mb-5">
             <!-- Parent container for the sticky content -->
             <div class="sticky-container">
                 <!-- Content that will stick -->
@@ -55,7 +58,7 @@ export default {
   /* border-top: 10px solid #000; */
   display: flex;
   position: relative;
-  @apply bg-electric-violet-200 px-5 text-lg font-serif dark:bg-gray-700 dark:text-gray-200;
+  @apply bg-purple-300 px-5 text-lg dark:bg-gray-700 dark:text-gray-200;
 }
 
 .left-side {
@@ -68,7 +71,7 @@ export default {
   width: 50%;
   /* vertical-align: middle; */
   height: 100vh; /* Make this taller to see the effect */
-  @apply pl-4 mt-28 items-center mb-5;
+  @apply pl-4 mt-10 items-center mb-5;
 }
 
 .right-side-layers {
@@ -89,7 +92,7 @@ export default {
   }
 
   & ul {
-    @apply list-disc list-outside pl-4;
+    @apply list-disc list-outside pl-5;
 
     & li {
       @apply mb-2;
@@ -112,7 +115,7 @@ h4.edu {
 .sticky-content {
   position: sticky;
   top: 5vh;
-  margin-top: 10vh; /* Adjust this to control the space at the top */
+  margin-top: 4vh; /* Adjust this to control the space at the top */
   @apply bg-gray-400 dark:bg-gray-600;
 }
 
