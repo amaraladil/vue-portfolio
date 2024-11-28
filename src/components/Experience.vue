@@ -1,5 +1,5 @@
 <template  >
-    <div id="experience" class="container-slider border-b-8 border-black border-double">
+    <div id="experience" class="container-slider">
         <div class="left-side mt-10 mb-5">
             <!-- Parent container for the sticky content -->
             <div class="sticky-container">
@@ -55,7 +55,7 @@ export default {
   /* border-top: 10px solid #000; */
   display: flex;
   position: relative;
-  @apply bg-indigo-500 px-5 text-lg font-serif dark:bg-gray-700 dark:text-gray-200;
+  @apply bg-electric-violet-200 px-5 text-lg font-serif dark:bg-gray-700 dark:text-gray-200;
 }
 
 .left-side {

@@ -4,9 +4,15 @@
   <MarqueeInfinite />
 
   <Experience />
+  
+  <div class="spliter whitespace-nowrap overflow-hidden h-48 bg-gradient-to-tr from-electric-violet-100 to-electric-violet-300 dark:from-purple-900 dark:to-indigo-800">
+    <div class="">
+      
+    </div>
 
+  </div>
 
-  <div class="custom-shape-divider-top-1710910973 bg-gray-400">
+  <!-- <div class="custom-shape-divider-top-1710910973 bg-gray-400">
     <svg
       data-name="Layer 1"
       xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +35,7 @@
         <stop offset="100%" stop-color="rgba(156, 163, 175, var(--tw-bg-opacity))" />
       </linearGradient>
     </svg>
-  </div>
+  </div> -->
 
   <Projects />
 </template>
@@ -56,6 +62,13 @@ export default {
 </script>
 
 <style scoped>
+
+.spliter div {
+  transform: translateX(-5vw) translateY(10px) rotate(2deg);
+  bottom: 70px;
+  width: 105vw;
+  @apply relative h-36 bg-electric-violet-200 dark:bg-gray-700 border-b-8 border-indigo-900 dark:border-indigo-400 border-dotted;
+}
 
 .custom-shape-divider-top-1710910706 {
   position: absolute;
