@@ -29,6 +29,7 @@ import {
   CoUnity,
 } from "oh-vue-icons/icons/co";
 import {
+  SiNuxtdotjs,
   SiFastapi,
   SiCsharp,
   SiNodedotjs,
@@ -70,6 +71,7 @@ addIcons(
   CoTensorflow,
   CoVisualStudio,
   CoUnity,
+  SiNuxtdotjs,
   SiFastapi,
   SiCsharp,
   SiNodedotjs,
@@ -81,7 +83,7 @@ addIcons(
   SiTailwindcss,
   SiBootstrap,
   SiExpress,
-  SiGithub
+  SiGithub,
 );
 
 createApp(App)

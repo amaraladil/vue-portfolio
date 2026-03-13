@@ -1,34 +1,33 @@
 <template>
-  <NavBar/>
+  <NavBar />
   <main>
-    <router-view/>
+    <router-view />
   </main>
 </template>
 
-
 <script>
-import NavBar from './components/NavBar.vue';
+import NavBar from "./components/NavBar.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    NavBar
+    NavBar,
   },
   data() {
     return {
       isDark: false,
-    }
-  }
+    };
+  },
 };
 </script>
 
 <style lang="scss">
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 body {
-  @apply  bg-purple-300 dark:bg-indigo-900 overscroll-none;
+  @apply bg-electric-violet-100 dark:bg-indigo-800 overscroll-none;
 }
 
 html {
@@ -63,12 +62,10 @@ main {
 }
 
 ::-webkit-scrollbar-track {
-  
   background: var(--tertiary);
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--primary);
 }
-
 </style>

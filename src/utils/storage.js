@@ -2,7 +2,6 @@
 
 // Save to local storage without Expiry
 export function saveWithoutExpiry(key, value) {
-  const now = new Date();
   const item = {
     value: value,
   };
