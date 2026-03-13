@@ -166,13 +166,13 @@ export default {
   @apply font-source;
 
   & h3 {
-    @apply text-2xl font-bold;
+    @apply text-lg sm:text-2xl font-bold;
   }
   & h4 {
-    @apply flex flex-col text-lg italic;
+    @apply flex flex-col text-base sm:text-lg italic;
 
     & span {
-      @apply text-sm;
+      @apply text-xs sm:text-sm;
     }
   }
 
@@ -180,16 +180,16 @@ export default {
     @apply list-disc list-outside pl-5;
 
     & li {
-      @apply mb-2;
+      @apply text-base sm:text-lg mb-2;
     }
   }
 }
 
 h4.edu {
-  @apply text-2xl py-2 !important;
+  @apply text-lg sm:text-2xl py-2 !important;
 
   span.edu {
-    @apply text-xl !important;
+    @apply text-base sm:text-xl !important;
   }
 }
 
