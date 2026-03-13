@@ -84,7 +84,7 @@ export default {
 
 <style scoped>
 nav {
-  @apply fixed z-10 w-full md:w-20 md:h-screen dark:bg-gray-800 dark:text-red-200 bg-gray-100 md:bg-gradient-to-r md:transition-all md:duration-300 md:ease-in-out bottom-0 h-20;
+  @apply fixed z-10 w-full md:w-20 md:h-screen dark:bg-gray-800 dark:text-red-200 bg-gray-300 md:bg-gradient-to-r md:transition-all md:duration-300 md:ease-in-out bottom-0 h-20;
 
   &:hover {
     @apply md:w-48;
@@ -107,7 +107,7 @@ nav a,
 nav button,
 nav .toggle {
   text-decoration: none;
-  @apply flex items-center md:justify-start justify-center font-bold text-lg h-20 text-gray-200 hover:text-purple-300 dark:text-gray-200 dark:hover:text-red-200;
+  @apply flex items-center md:justify-start justify-center font-bold text-lg h-20 text-gray-900 hover:text-purple-500 dark:text-gray-200 dark:hover:text-red-200;
 }
 
 nav button,

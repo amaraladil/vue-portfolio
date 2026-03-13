@@ -80,7 +80,7 @@ export default {
   z-index: 1;
   /* Dynamic width based on viewport */
   width: max(4000px, 150vw); /* Ensures it covers ultra-wide screens */
-  @apply bg-purple-300 dark:bg-gray-700;
+  @apply bg-indigo-300 dark:bg-gray-700;
   padding: 0.5em 0 10em 1em;
   position: relative;
 }
