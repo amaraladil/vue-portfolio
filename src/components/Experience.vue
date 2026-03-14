@@ -144,7 +144,7 @@ export default {
   /* border-top: 10px solid #000; */
   display: flex;
   position: relative;
-  @apply bg-indigo-300 px-5 text-lg dark:bg-gray-700 dark:text-gray-200;
+  @apply bg-indigo-300 px-3 sm:px-5 text-lg dark:bg-gray-700 dark:text-gray-200;
 }
 
 .left-side {
@@ -180,7 +180,7 @@ export default {
     @apply list-disc list-outside pl-5;
 
     & li {
-      @apply text-base sm:text-lg mb-2;
+      @apply text-sm sm:text-lg mb-2;
     }
   }
 }
