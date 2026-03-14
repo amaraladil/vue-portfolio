@@ -3,7 +3,7 @@
     class="px-10 flex flex-col md:flex-row items-center bg-indigo-200 dark:bg-gray-800 dark:text-gray-200"
   >
     <div
-      class="flex flex-col md:w-1/2 p-4 text-left font-source border-b-8 border-indigo-900 dark:border-indigo-300 border-dotted md:border-0"
+      class="flex flex-col md:w-1/2 pb-4 sm:p-4 text-left font-source border-b-8 border-indigo-900 dark:border-indigo-300 border-dotted md:border-0"
     >
       <div class="techstack order-first md:order-2">
         <v-icon
@@ -64,7 +64,7 @@
       </div>
     </div>
 
-    <div class="md:w-1/2 p-4 order-first md:order-last">
+    <div class="md:w-1/2 pt-4 pb-2 sm:p-4 order-first md:order-last">
       <div class="rounded-lg border-4 border-indigo-600">
         <img alt="Vue logo" :src="getImageUrl(project.image)" class="w-full" />
         <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
