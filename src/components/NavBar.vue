@@ -84,7 +84,7 @@ export default {
 
 <style scoped>
 nav {
-  @apply fixed z-10 w-full md:w-20 md:h-screen dark:bg-gray-800 dark:text-red-200 bg-gray-300 md:bg-gradient-to-r md:transition-all md:duration-300 md:ease-in-out bottom-0 h-20;
+  @apply fixed z-10 w-full md:w-20 md:h-screen border-r-2 border-gray-400 dark:border-gray-700 dark:bg-gray-800 dark:text-red-200 bg-gray-300 md:bg-gradient-to-r md:transition-all md:duration-300 md:ease-in-out bottom-0 h-20;
 
   &:hover {
     @apply md:w-48;
