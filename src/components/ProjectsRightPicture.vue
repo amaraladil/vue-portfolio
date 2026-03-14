@@ -16,7 +16,7 @@
       </div>
 
       <h3 class="text-3xl order-1">{{ project.name }}</h3>
-      <div class="pb-3 text-lg order-2 space-y-3">
+      <div class="pt-1 sm:pt-0 pb-3 text-lg order-2 space-y-3">
         <p
           v-for="(line, index) in project.description.split('\\n')"
           :key="index"
